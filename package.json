@@ -1,0 +1,29 @@
+{
+  "name": "imporium",
+  "version": "1.0.0",
+  "description": "Easy to use online market place for NFT's of the etherium network. Also a platform for creator to mint their own NFT's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayi2007/imporium.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dayi2007/imporium/issues"
+  },
+  "homepage": "https://github.com/dayi2007/imporium#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
