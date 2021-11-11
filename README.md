@@ -4,7 +4,29 @@ Description
 
 Easy to use online market place for NFT's of the etherium network. Also a platform for creator to mint their own NFT's
 
-Data example
+Data schema example:
+
+    Products:
+  {
+    title: { type: String, required: true },
+    creator: { type: String, required: true },
+    image: { type: String, required: true },
+    description: { type: String, required: true },
+    price: { type: Integer, required: true }
+  },
+  { timestamps: true }
+    
+
+    Authentication:
+  {
+    username: {
+      type: String,
+      required: true,
+    },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true, select: false },
+  },
+  { timestamps: true }
 
 MVP:
 
