@@ -1,10 +1,12 @@
 # imporium 
 
-Description
+## Description
 
 Easy to use online market place for NFT's of the etherium network. Also a platform for creator to mint their own NFT's
 
-Data Schema example:
+
+## Data schema example:
+```
 
     Products:
   {
@@ -27,8 +29,8 @@ Data Schema example:
     password_digest: { type: String, required: true, select: false },
   },
   { timestamps: true }
-
-MVP:
+```
+## MVP:
 
 - Built using React with at least 6 separate components in an organized and understandable React file structure. 
 
@@ -48,19 +50,26 @@ MVP:
 
 - Deployed on Netlify, Heroku, & MongoDB Atlas.
 
-Post MVP
+## Post MVP
 
+- Implement a user profile page with collections
 
-Project schedule
+- Sell button component attached to Product Details
 
-Team Expectations: 
+- Three.js animation
+
+- Unique brand logo
+
+## Project schedule
+
+## Team Expectations: 
 
 https://docs.google.com/document/d/18g4GcseKsVteMSpRMYecZCKjOtByZ7WB9xaNa0J-ttc/edit
 
-GitHub Project Board: 
+## GitHub Project Board: 
 
 https://github.com/dayi2007/imporium/projects/1?add_cards_query=is%3Aopen
 
-Time Frames
+## Time Frames
 
-SWOT Analysis
+## SWOT Analysis
