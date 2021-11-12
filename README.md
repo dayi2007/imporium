@@ -36,6 +36,8 @@ Easy to use online market place for NFT's of the etherium network. Also a platfo
 
 Wireframe UI: https://www.figma.com/file/4zEaux79Sbybg8qrPBSdMx/Imporium?node-id=0%3A1
 
+![image](https://user-images.githubusercontent.com/29825714/141541212-d19b112d-2d0a-48aa-9853-718110f616b1.png)
+
 Component Structure: https://whimsical.com/imporium-RGpNBgc58uN9dbCwspKTjC
 ## MVP:
 
