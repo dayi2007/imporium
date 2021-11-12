@@ -30,6 +30,13 @@ Easy to use online market place for NFT's of the etherium network. Also a platfo
   },
   { timestamps: true }
 ```
+![Screen Shot 2021-11-12 at 4 44 10 PM](https://user-images.githubusercontent.com/29825714/141538301-bd8da908-bcad-4459-af2e-ad44126f3fd7.png)
+
+![Screen Shot 2021-11-12 at 4 44 27 PM](https://user-images.githubusercontent.com/29825714/141538327-063a0bbf-778a-4064-a6b2-1a663a4ecf5a.png)
+
+Wireframe UI: https://www.figma.com/file/4zEaux79Sbybg8qrPBSdMx/Imporium?node-id=0%3A1
+
+Component Structure: https://whimsical.com/imporium-RGpNBgc58uN9dbCwspKTjC
 ## MVP:
 
 - Built using React with at least 6 separate components in an organized and understandable React file structure. 
@@ -60,8 +67,6 @@ Easy to use online market place for NFT's of the etherium network. Also a platfo
 
 - Unique brand logo
 
-## Project schedule
-
 ## Team Expectations: 
 
 https://docs.google.com/document/d/18g4GcseKsVteMSpRMYecZCKjOtByZ7WB9xaNa0J-ttc/edit
@@ -71,5 +76,3 @@ https://docs.google.com/document/d/18g4GcseKsVteMSpRMYecZCKjOtByZ7WB9xaNa0J-ttc/
 https://github.com/dayi2007/imporium/projects/1?add_cards_query=is%3Aopen
 
 ## Time Frames
-
-## SWOT Analysis
