@@ -43,6 +43,9 @@ const insertData = async () => {
   await user5.save()
 
   const products = [
+
+
+    
   ]
 
   
