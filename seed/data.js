@@ -33,7 +33,7 @@ const insertData = async () => {
     email: 'j@gmail.com',
     password_digest: await bcrypt.hash('L0v32!p4int', 11)
   })
-  await user5.save()
+  await user4.save()
 
   const user5 = new User({
     username: 'Dayanna',
