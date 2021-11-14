@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
-const Products = new Schema(
+const Product = new Schema(
   {
     title: { type: String, required: true },
     creator: { type: String, required: true },
