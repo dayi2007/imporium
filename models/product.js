@@ -7,10 +7,10 @@ const Products = new Schema(
     creator: { type: String, required: true },
     image: { type: String, required: true },
     description: { type: String, required: true },
-    price: { type: Integer, required: true },
-    copies: { type: Integer, required: true },
-    lowest: { type: Integer, required: true },
-    highest: { type: Integer, required: true }
+    price: { type: String, required: true },
+    copies: { type: String, required: true },
+    lowest: { type: String, required: true },
+    highest: { type: String, required: true }
   },
   { timestamps: true }
 )
