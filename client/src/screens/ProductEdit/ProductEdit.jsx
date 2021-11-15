@@ -137,8 +137,15 @@ const ProductEdit = () => {
             required
             autoFocus
             onChange={handleChange}
-        />
-        <button type="submit" className="save-button">Save</button>
+            />
+          
+        <section className="buttons">  
+          <button type="submit" className="save-button">Save</button>
+          <button
+              className='delete-button'
+              onClick={() => deleteProduct(product._id)}>Delete
+          </button>
+        </section>
         </form>
       </section>
     </div>
