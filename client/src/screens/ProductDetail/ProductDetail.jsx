@@ -8,11 +8,12 @@ import TokenData from '../../components/TokenData/TokenData.jsx';
 import './ProductDetail.css';
 
 
-const ProductDetail = () => {
+
+const ProductDetail = ({user}) => {
 
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  const { id } = useParams;
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchProduct = async () => {
