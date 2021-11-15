@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import { getProducts } from "../../services/products";
+import Layout from "../../components/Layout/Layout";
+import GalleryCard from "../../components/GalleryCard/GalleryCard.jsx";
 
-const Gallery = () =>{
+const Gallery = (props) =>{
     const [cards, setCards] = useState([]);
     
     useEffect(() => {

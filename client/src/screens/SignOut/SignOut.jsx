@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import { signOut } from '../../services/users'
-import { useHistory } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 const SignOut = (props) => {
   const { setUser } = props
-  const history = useHistory()
+  const history = Navigate()
 
   useEffect(() => {
     const signOutUser = async () => {
