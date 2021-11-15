@@ -6,11 +6,11 @@ import Carousel from '../../components/Carousel/Carousel'
 const Home = (props) => {
     
 return (
-    <Layout user={props.user}>
+
         <div className='home'>
             <Carousel />
         </div>
-    </Layout>
+
 )
 }
 
