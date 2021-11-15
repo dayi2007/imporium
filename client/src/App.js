@@ -34,7 +34,7 @@ const App = () => {
         <Route
           path="/create-product"
           element={
-            user ? <ProductCreate user={user} /> : <Navigate to="sign-up" />
+            user ? <ProductCreate user={user} /> : <Navigate to="/sign-up" />
           }
         />
         <Route
