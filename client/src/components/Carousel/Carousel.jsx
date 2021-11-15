@@ -286,7 +286,7 @@ waitForImages();
             <div className="cards__wrapper">
               <div className="card current--card">
                 <div className="card__image">
-                  <img src={ima} alt="hi" />
+                  <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="hi" />
                 </div>
               </div>
               <div className="card next--card">
