@@ -47,92 +47,100 @@ const ProductEdit = () => {
 
   return (
     <Layout>
-    <div>
+      <div className="edit-page">
+        
+        <section className="display-section">
+          <img className="full-image" src={product.image} />
+          <h2 className="full-title">{product.title}</h2>
+          <h3 className="full-creator">{product.creator}</h3>
+        </section> 
       
-      <form onSubmit={handleSubmit}>
-        <input
-          className="input-title"
-          placeholder="Title"
-          value={product.title}
-          name='title'
-          required
-          autoFocus
-          onChange={handleChange}
+        <section className="form-wrapper">
+          <form onSubmit={handleSubmit}>
+            <input
+              className="input-title"
+              placeholder="Title"
+              value={product.title}
+              name='title'
+              required
+              autoFocus
+              onChange={handleChange}
           />
           
           <input
-          className="input-creator"
-          placeholder="Creator"
-          value={product.creator}
-          name='creator'
-          required
-          autoFocus
-          onChange={handleChange}
+            className="input-creator"
+            placeholder="Creator"
+            value={product.creator}
+            name='creator'
+            required
+            autoFocus
+            onChange={handleChange}
           />
           
           <input
-          className="input-image"
-          placeholder="Image URL"
-          value={product.image}
-          name='image'
-          required
-          autoFocus
-          onChange={handleChange}
+            className="input-image"
+            placeholder="Image URL"
+            value={product.image}
+            name='image'
+            required
+            autoFocus
+            onChange={handleChange}
           />
           
           <textarea
             className="input-description"
             rows={10}
             cols={78}
-          placeholder="Description"
-          value={product.description}
-          name='description'
-          required
-          autoFocus
-          onChange={handleChange}
+            placeholder="Description"
+            value={product.description}
+            name='description'
+            required
+            autoFocus
+            onChange={handleChange}
           />
           
           <input
-          className="input-price"
-          placeholder="Price"
-          value={product.price}
-          name='price'
-          required
-          autoFocus
-          onChange={handleChange}
+            className="input-price"
+            placeholder="Price"
+            value={product.price}
+            name='price'
+            required
+            autoFocus
+            onChange={handleChange}
           />
           
           <input
-          className="input-copies"
-          placeholder="Copies"
-          value={product.copies}
-          name='copies'
-          required
-          autoFocus
-          onChange={handleChange}
+            className="input-copies"
+            placeholder="Copies"
+            value={product.copies}
+            name='copies'
+            required
+            autoFocus
+            onChange={handleChange}
           />
           
           <input
-          className="input-lowest"
-          placeholder="Lowest Price"
-          value={product.lowest}
-          name='lowest'
-          required
-          autoFocus
-          onChange={handleChange}
+            className="input-lowest"
+            placeholder="Lowest Price"
+            value={product.lowest}
+            name='lowest'
+            required
+            autoFocus
+            onChange={handleChange}
           />
           
           <input
-          className="input-highest"
-          placeholder="Highest Price"
-          value={product.highest}
-          name='highest'
-          required
-          autoFocus
-          onChange={handleChange}
+            className="input-highest"
+            placeholder="Highest Price"
+            value={product.highest}
+            name='highest'
+            required
+            autoFocus
+            onChange={handleChange}
         />
         <button type="submit" className="save-button">Save</button>
-      </form>
+        </form>
+      </section>
     </div>
     </Layout>
   )
