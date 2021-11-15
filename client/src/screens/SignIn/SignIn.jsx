@@ -7,7 +7,7 @@ const SignIn = (props) => {
   const history = useHistory()
 
   const [form, setForm] = useState({
-    email: '',
+    username: '',
     password: '',
     isError: false,
     errorMsg: '',
@@ -32,7 +32,7 @@ const SignIn = (props) => {
       setForm({
         isError: true,
         errorMsg: 'Invalid Credentials',
-        email: '',
+        username: '',
         password: '',
       })
     }
@@ -51,19 +51,19 @@ const SignIn = (props) => {
     }
   }
 
-  const { email, password } = form
+  const { username, password } = form
 
   return (
     <div className='form-container'>
       <h3>Sign In</h3>
       <form onSubmit={onSignIn}>
-        <label>Email</label>
+        <label>Username</label>
         <input
           required
           type='text'
-          name='email'
-          value={email}
-          placeholder='Enter Email'
+          name='username'
+          value={username}
+          placeholder='Enter Username'
           onChange={handleChange}
         />
         <label>Password</label>
