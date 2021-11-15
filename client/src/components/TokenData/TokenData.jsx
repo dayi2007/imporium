@@ -1,4 +1,4 @@
-
+import './TokenData.css'
 
 const TokenData = ({product, updateProduct, deleteProduct}) => {
   return (

@@ -1,4 +1,4 @@
-
+import './FullCard.css';
 
 const FullCard = ({product}) => {
   return (
