@@ -1,6 +1,7 @@
 import './TokenData.css'
 
-const TokenData = ({product, updateProduct, deleteProduct}) => {
+const TokenData = ({ product, updateProduct, deleteProduct }) => {
+  // probably passing updateProduct and deleteProduct elsewhere
   return (
     <div className="token-data-card">
       
