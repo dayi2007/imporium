@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Carousel.css'
-import ProductCard from '../ProductCard/ProductCard'
-import { getProducts } from '../../services/products'
+
 
 const Carousel = () => {
     
@@ -11,3 +10,5 @@ const Carousel = () => {
         </div>
     )
 }
+
+export default Carousel

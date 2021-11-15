@@ -10,6 +10,7 @@ import ProductEdit from "./screens/ProductEdit/ProductEdit";
 import SignIn from "./screens/SignIn/SignIn";
 import SignOut from "./screens/SignOut/SignOut";
 import SignUp from "./screens/SignUp/SignUp";
+import { verifyUser } from "./services/users";
 
 const App = () => {
   const [user, setUser] = useState(null);
