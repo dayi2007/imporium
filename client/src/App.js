@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Route, Routes, Redirect } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import About from "./screens/About/About";
 import Home from "./screens/Home/Home";
@@ -33,14 +33,14 @@ const App = () => {
         <Route
           path="/create-product"
           element={
-            user ? <ProductCreate user={user} /> : <Redirect to="sign-up" />
+            user ? <ProductCreate user={user} /> : <Navigate to="sign-up" />
           }
         />
         <Route
           exact
           path="/gallery/:id/edit"
           element={
-            user ? <ProductEdit user={user} /> : <Redirect to="/gallery" />
+            user ? <ProductEdit user={user} /> : <Navigate to="/gallery" />
           }
         />
         <Route exact path="/gallery/:id" element={<ProductDetail user={user} />} />
