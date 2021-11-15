@@ -3,6 +3,8 @@ import Layout from '../../components/Layout/Layout.jsx';
 import { useParams } from 'react-router-dom';
 import { deleteProduct, getProduct } from '../../services/products.js';
 import { updateProduct } from '../../services/products.js';
+import FullCard from '../../components/FullCard/FullCard.jsx';
+import TokenData from '../../components/TokenData/TokenData.jsx';
 import './ProductDetail.css';
 
 
