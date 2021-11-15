@@ -17,17 +17,19 @@ const Gallery = (props) =>{
     console.log(cards)
 
     return(
-        <Layout user={props.user}>
             <div className="gallery">
+                <Layout user={props.user}>
                 <h1>Gallery</h1>
+                <div className="cards">
                 {cards?.map((card) =>(                
                 <div className="card-div" key={card.id}>
                 <img src={card.image} alt={card.title}/>
                 </div>                      
                 )
-                )}         
+                )} 
+                </div>        
+                </Layout>
             </div>
-        </Layout>
     )
 }
 export default Gallery
