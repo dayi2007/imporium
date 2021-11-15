@@ -28,8 +28,14 @@ const ProductDetail = () => {
   return (
     <Layout>
     <div className="product-detail-page">
-        <FullCard product={product}/>
-        <TokenData product={product} updateProduct={updateProduct} deleteProduct={deleteProduct}/>
+        <FullCard
+          product={product}
+        />
+        <TokenData
+          product={product}
+          updateProduct={updateProduct}
+          deleteProduct={deleteProduct}
+        />
       </div>
       </Layout>
   )
