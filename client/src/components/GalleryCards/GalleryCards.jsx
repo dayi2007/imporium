@@ -11,25 +11,37 @@ const GalleryCards = () => {
         const fetchCards = async () => {
             const allCards = await getProducts()
             setCards(allCards)
+ 
         }
         fetchCards()
     }, [])
+    // console.log(cards)
 
-    .map((card, index) =>
-        index < 8 ?(
+    // cards.map((card, index) =>
+    //     // index < 8 ?(
+    //         <GalleryCard
+    //            _id={card.id} 
+    //            name={card.name} 
+    //            img={card.img} 
+    //            key={index}             
+    //         />
+    //     // ): null
+    // )
+
+    return (
+      <div>
+          <div className="gallery-cards">{ 
+          cards.map((card, index) =>{
+        // index < 8 ?(
             <GalleryCard
                _id={card.id} 
                name={card.name} 
                img={card.img} 
                key={index}             
             />
-        ): null
-    )
-
-
-    return (
-      <div>
-          <div className="gallery-cards">{cards}</div>
+            })
+        }
+            </div>
       </div>
     )
   }

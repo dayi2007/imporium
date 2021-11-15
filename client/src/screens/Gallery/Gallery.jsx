@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getProducts } from "../../services/products";
 import Layout from "../../components/Layout/Layout";
 import GalleryCard from "../../components/GalleryCard/GalleryCard.jsx";
+import "./Gallery.css"
 
 const Gallery = (props) =>{
     const [cards, setCards] = useState([]);
@@ -13,19 +14,17 @@ const Gallery = (props) =>{
         }
         fetchCards()
     }, [])
+    console.log(cards)
 
     return(
         <Layout user={props.user}>
             <div className="gallery">
-                {cards.map((card, index) =>{
-                    return(
-                        <GalleryCard
-                        _id={card.id} 
-                        name={card.name} 
-                        img={card.img} 
-                        key={index}
-                        />)
-                    }
+                <h1>Gallery</h1>
+                {cards?.map((card) =>(                
+                <div className="card-div" key={card.id}>
+                <img src={card.image} alt={card.title}/>
+                </div>                      
+                )
                 )}         
             </div>
         </Layout>
