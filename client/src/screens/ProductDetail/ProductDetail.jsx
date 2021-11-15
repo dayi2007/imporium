@@ -6,6 +6,7 @@ import { updateProduct } from '../../services/products.js';
 import FullCard from '../../components/FullCard/FullCard.jsx';
 import TokenData from '../../components/TokenData/TokenData.jsx';
 import './ProductDetail.css';
+import ProductEdit from '../ProductEdit/ProductEdit.jsx';
 
 
 
