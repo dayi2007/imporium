@@ -41,7 +41,9 @@ const App = () => {
           exact
           path="/gallery/:id/edit"
           element={
-            user ? <ProductEdit user={user} /> : <Navigate to="/gallery" />
+            // user ?
+              <ProductEdit user={user} />
+              // : <Navigate to="/" />
           }
         />
         <Route exact path="/gallery/:id" element={<ProductDetail user={user} />} />

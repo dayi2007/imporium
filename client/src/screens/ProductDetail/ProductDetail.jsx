@@ -6,13 +6,15 @@ import { updateProduct } from '../../services/products.js';
 import FullCard from '../../components/FullCard/FullCard.jsx';
 import TokenData from '../../components/TokenData/TokenData.jsx';
 import './ProductDetail.css';
+import ProductEdit from '../ProductEdit/ProductEdit.jsx';
 
 
-const ProductDetail = () => {
+
+const ProductDetail = ({user}) => {
 
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
-  const { id } = useParams;
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchProduct = async () => {

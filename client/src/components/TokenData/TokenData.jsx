@@ -1,5 +1,8 @@
 import './TokenData.css'
 import { Link } from 'react-router-dom';
+import eth from './eth-logo.png'
+
+
 
 const TokenData = ({ product, updateProduct, deleteProduct }) => {
   // probably passing updateProduct and deleteProduct elsewhere
@@ -40,11 +43,11 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
           <button className="buy">Buy Now</button>
           <button className="offer">Make Offer</button>
           {/* Need Route & Need to pass product to screen */}
-          <Link to="/edit/:id"><button className="edit">Edit NFT</button></Link>
+          <Link to={`/gallery/${product._id}/edit`}>Edit NFT</Link>
         </section>
         
         <section className="token-footer">
-          <img className="ether-img" src="#" />
+          <img className="ether-img" src={eth} />
           <h2>{product.price}</h2>
           <img className="imp-logo" src="#" />
         </section>
