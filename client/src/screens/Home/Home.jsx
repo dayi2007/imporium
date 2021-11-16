@@ -6,10 +6,17 @@ import Carousel from '../../components/Carousel/Carousel'
 const Home = (props) => {
     
 return (
-
-        <div className='home'>
+    <div>
+            <Layout />
+            <div className='home'>
             <Carousel />
         </div>
+        <div className="more">
+            <h1>categories</h1>
+        </div>
+    </div>
+
+
 
 )
 }
