@@ -1,12 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
+
+nav {
+  background-color:black;
+  height: 50px;
+}
 .link {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
   color: white;
   text-decoration: none;
-  display: inline;
-  /* justify-content: right; */
-  justify-items: right;
-  align-items: right;
+  display: flex;
+  float: right;
+  justify-content: space-evenly;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: -16px;
 }
 .logo {
+  font-family: 'Orbitron', sans-serif;
   color: white;
   text-decoration: none;
+  display: flex;
+  margin-left: 5rem;
+  letter-spacing: 3px;
+  padding-top: 18px;
+}
+.link-welcome{
+  color: white;
 }
