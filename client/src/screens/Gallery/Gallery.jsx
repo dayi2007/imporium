@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../services/products";
 import Layout from '../../components/Layout/Layout';
-// import GalleryCard from "../../components/GalleryCard/GalleryCard.jsx";
+import GalleryCard from "../../components/GalleryCard/GalleryCard.jsx";
 import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
 import Sort from "../../components/Sort/Sort";
 import Search from "../../components/Search/Search"
@@ -19,10 +19,10 @@ const Gallery = (props) =>{
         const fetchCards = async () => {
             const allCards = await getProducts()
             setCards(allCards)
+            setSearchResult(allCards)
         }
         fetchCards()
     }, [])
-    console.log(cards)
 
     const handleSort = (type) => {
         if (type !== '' && type !== undefined) {
@@ -52,6 +52,7 @@ const Gallery = (props) =>{
       }
     
       const handleSearch = (event) => {
+        console.log(even)
         const results = cards.filter((card) =>
           card.title.toLowerCase().includes(event.target.value.toLowerCase())
         )
