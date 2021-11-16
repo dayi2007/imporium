@@ -7,6 +7,7 @@ import Sort from "../../components/Sort/Sort";
 import Search from "../../components/Search/Search"
 import "./Gallery.css"
 import { Link } from "react-router-dom";
+import eth from "./eth-logo.png";
 
 const Gallery = (props) =>{
     const [cards, setCards] = useState([]);
@@ -74,9 +75,15 @@ const Gallery = (props) =>{
                                       <img className="image" src={card.image} alt={card.title}/> 
                                       <div className="hover-cards">
                                         <span className="text">
-                                            <h3>{card.title}</h3>
-                                            <img className="eth" src="./eth-logo.png" alt="eth"/>
-                                            <h4>{card.price}</h4>
+                                          <h3>{card.title}</h3>
+                                          <div className="row">
+                                              <div className="col">
+                                                <img className="eth" src={eth} alt="eth"/>
+                                              </div>
+                                              <div className="col">
+                                                <h4>{card.price}</h4>
+                                              </div>
+                                          </div>
                                         </span>
                                       </div>
                                     </Link>

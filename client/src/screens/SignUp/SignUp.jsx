@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './SignUp.css'
 import { signUp } from '../../services/users'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const SignUp = (props) => {
-  const history = Navigate()
+  const history = useNavigate()
 
   const [form, setForm] = useState({
     username: '',
