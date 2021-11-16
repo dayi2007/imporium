@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
+
+.full-title {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(0 0 0.75rem crimson)
+}
+
+.full-creator {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(2px 10px 4px #723398)
+}
+
+/* .full-image {
+  
+} */

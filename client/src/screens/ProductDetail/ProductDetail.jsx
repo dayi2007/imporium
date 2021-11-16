@@ -8,8 +8,6 @@ import TokenData from '../../components/TokenData/TokenData.jsx';
 import './ProductDetail.css';
 
 
-
-
 const ProductDetail = ({user}) => {
 
   const [product, setProduct] = useState(null);
@@ -28,13 +26,15 @@ const ProductDetail = ({user}) => {
   if (!isLoaded) {
     return <h1 className="fetch-product">Rendering NFT</h1>
   }
-
   
 
   return (
-    
-      <div className="product-detail-page">
+    <div>
+      
+    <div className="product-detail-page">
+      
       <Layout>
+      
         <div className="innerdiv">
           <div className="carddiv">
         <FullCard
@@ -49,10 +49,12 @@ const ProductDetail = ({user}) => {
         />
         </div>
         </div>
+        
         </Layout>
+
       </div>
-      
+  </div>
   )
-}
+  }
 
 export default ProductDetail
