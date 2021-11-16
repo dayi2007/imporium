@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './SignUp.css'
 import { signUp } from '../../services/users'
 import { useNavigate } from 'react-router-dom'
+import Layout from '../../components/Layout/Layout';
 
 const SignUp = (props) => {
   const history = useNavigate()
@@ -58,6 +59,8 @@ const SignUp = (props) => {
   const { username, email, password, passwordConfirmation } = form
 
   return (
+    <div>
+      <Layout>
     <div className='form-container'>
       <h3>Sign Up</h3>
       <form onSubmit={onSignUp}>
@@ -99,6 +102,8 @@ const SignUp = (props) => {
         />
         {renderError()}
       </form>
+    </div>
+    </Layout>
     </div>
   )
 }
