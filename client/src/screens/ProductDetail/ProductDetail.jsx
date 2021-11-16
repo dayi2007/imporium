@@ -6,7 +6,7 @@ import { updateProduct } from '../../services/products.js';
 import FullCard from '../../components/FullCard/FullCard.jsx';
 import TokenData from '../../components/TokenData/TokenData.jsx';
 import './ProductDetail.css';
-import ProductEdit from '../ProductEdit/ProductEdit.jsx';
+
 
 
 
@@ -29,19 +29,29 @@ const ProductDetail = ({user}) => {
     return <h1 className="fetch-product">Rendering NFT</h1>
   }
 
+  
+
   return (
-    <Layout>
-    <div className="product-detail-page">
+    
+      <div className="product-detail-page">
+      <Layout>
+        <div className="innerdiv">
+          <div className="carddiv">
         <FullCard
           product={product}
-        />
+          />
+          </div>
+          <div className="tokendiv">
         <TokenData
           product={product}
           updateProduct={updateProduct}
           deleteProduct={deleteProduct}
         />
+        </div>
+        </div>
+        </Layout>
       </div>
-      </Layout>
+      
   )
 }
 
