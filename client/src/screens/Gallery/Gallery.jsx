@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../services/products";
 import Layout from '../../components/Layout/Layout';
-import GalleryCard from "../../components/GalleryCard/GalleryCard.jsx";
+// import GalleryCard from "../../components/GalleryCard/GalleryCard.jsx";
 import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
 import Sort from "../../components/Sort/Sort";
 import Search from "../../components/Search/Search"
@@ -82,7 +82,7 @@ const Gallery = (props) =>{
                                                 <img className="eth" src={eth} alt="eth"/>
                                               </div>
                                               <div className="col">
-                                                <h4>{card.price}</h4>
+                                                <h2>{card.price}</h2>
                                               </div>
                                           </div>
                                         </span>
