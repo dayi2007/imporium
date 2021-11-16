@@ -52,7 +52,7 @@ const Gallery = (props) =>{
       }
     
       const handleSearch = (event) => {
-        console.log(even)
+        console.log(event.target.value)
         const results = cards.filter((card) =>
           card.title.toLowerCase().includes(event.target.value.toLowerCase())
         )
