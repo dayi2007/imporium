@@ -7,7 +7,7 @@ const Home = (props) => {
     
 return (
     <div>
-            <Layout />
+            <Layout >
             <div className="newhome">
                 <div className='home'>
                     <Carousel />
@@ -15,6 +15,7 @@ return (
             </div>
 
         <LandingPage />
+        </Layout>
     </div>
 
 
