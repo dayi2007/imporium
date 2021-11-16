@@ -13,12 +13,12 @@ const ProductDetail = ({user}) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
-
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getProduct(id)
       setProduct(product)
       setLoaded(true)
+      console.log(product)
     }
     fetchProduct()
   }, [id])
