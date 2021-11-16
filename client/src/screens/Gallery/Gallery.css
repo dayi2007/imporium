@@ -1,0 +1,36 @@
+.card-div{
+    width: 350px;
+    height: 350px; 
+    padding: 15px;
+} 
+img{
+    width: 100%;
+}
+.cards{
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 60px;
+}
+
+.gallery{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    /* background-color: #fff; */
+    background-image: url(Rectangle1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    
+}
+/* body{
+    overflow: scroll;
+} */
+.cards:hover{
+    transition: 0.2s ease-in-out;
+
+}
