@@ -6,12 +6,6 @@
 --card-transition-easing: ease;
 }
 
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-
 .home {
 width: 100%;
 height: 100vh;
@@ -21,6 +15,7 @@ align-items: center;
 overflow: scroll;
 background-repeat: no-repeat;
 background-size: cover;
+background-image: url(https://lh3.googleusercontent.com/o_1BWLqxoSGMG34_nof3IwYbNAwH6SF7l3gi6_MxcDsOnyjobWbaNvrHyXpBKQG8EuwUieTYn9G4aK3y-eSjtHH8KIOw0GEUo7PlKw=w286);
 }
 
 button {
