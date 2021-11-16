@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './Carousel.css'
 import {gsap} from "gsap";
 import imagesLoaded from "imagesloaded";
-import ima from "./butoo.png"
+
 
 const Carousel = () => {
 
