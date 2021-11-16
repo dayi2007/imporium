@@ -27,7 +27,7 @@
     display: table;
     clear: both;
   }
-.gallery{
+/* .gallery{
     position: absolute;
     left: 0%;
     right: 0%;
@@ -39,7 +39,7 @@
     background-size: cover;
     overflow: scroll;
     
-}
+} */
 /* body{
     overflow: scroll;
 } */

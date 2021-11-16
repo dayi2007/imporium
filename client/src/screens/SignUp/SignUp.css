@@ -39,6 +39,7 @@ body {
   margin-bottom: 1.5rem;
   font-size: 0.7rem;
   border-bottom: 1px solid rgba(231, 231, 231, 0.8);
+  padding: 0px 30px;
 }
 
 .input:hover {
@@ -81,7 +82,7 @@ body {
   padding-bottom: 0.5;
 }
 
-.button {
+#button {
   width: 100%;
   background: white;
   border: none;
@@ -96,7 +97,7 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
+#button:hover {
   width: 100%;
   background: transparent;
   border: 2px solid white;
