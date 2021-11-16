@@ -1,4 +1,6 @@
-import Particles from 'react-tsparticles'
+
+import Particles from 'react-tsparticles' 
+
 import './Particles.css'
 
 const particlesInit = (main) => {

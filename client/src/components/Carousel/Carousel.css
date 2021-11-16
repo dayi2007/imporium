@@ -11,7 +11,15 @@ p {
     font-family: "Montserrat";
 
 }
+.text-name {
+    color: white;
+    font-family: "Montserrat";
+}
 
+.text-location {
+    color: white;
+    font-family: "Montserrat";
+}
 
 .home {
 width: 100%;
