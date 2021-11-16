@@ -9,8 +9,8 @@ body {
   background-color: #151630;
 }
 
-.form {
-  background-image: linear-gradient(#1391ff, #0145ff);
+.form-container {
+  background-image: linear-gradient(#B760E0, #60E084);
   width: 400px;
   height: 600px;
   position: absolute;
@@ -23,34 +23,14 @@ body {
   box-shadow: 2px 2px 8px #000000ab;
 }
 
-.img-overlay::before {
-  content:'';
-  background-image: url();
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 400px;
-  height: 600px;
-  opacity: 0.18;
-  z-index: -1;
-}
-
-.icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-}
-
-.form h1 {
+.form-container h3 {
   color: white;
   font-size: large;
-  text-align: left;
+  text-align: center;
   margin-bottom: 3rem;
 }
 
-.inputs {
+.input {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,11 +41,22 @@ body {
   border-bottom: 1px solid rgba(231, 231, 231, 0.8);
 }
 
-.inputs:hover {
+.input:hover {
   border-bottom: 3px solid #fff;
   transition: 0.2s ease-in-out;
 }
 
+#username, 
+#username::placeholder {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.5rem;
+  font-size: 0.8;
+  padding-bottom: 0.5;
+}
 #email, 
 #email::placeholder {
   width: 100%;
@@ -119,11 +110,4 @@ body {
   outline: none;
   cursor: pointer;
   transition: 0.3 ease-in-out;
-}
-/* ease-in-out is the transition we have been looking for
- Learned to style button and placeholders*/
-
-p {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8rem;
 }

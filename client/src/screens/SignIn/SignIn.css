@@ -3,29 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  color: 
-  rgba(183, 96, 224, 0.92),
-  rgba(174, 110, 215, 0.879),
-  rgba(171, 115, 211, 0.8636),
-  rgba(166, 121, 206, 0.8431),
-  rgba(155, 138, 194, 0.7919),
-  rgba(150, 146, 188, 0.7688)
-  rgba(146, 152, 184, 0.7509),
-  rgba(140, 159, 179, 0.7278),
-  rgba(129, 176, 167, 0.678),
-  rgba(123, 184, 161, 0.651),
-  rgba(116, 195, 153, 0.6176),
-  rgba(107, 209, 143, 0.5766),
-  rgba(96, 224, 132, 0.53),
-}
+
 body {
   font-family: 'Varela Round', sans-serif;
-  background-color: #151630;
 }
 
 .form-container {
-  background-image: linear-gradient(#1391ff, #0145ff);
+  background-image:
+   linear-gradient( #B760E0, 
+  #AE6ED7, #AB73D3, #A679CE
+  #A181C9, #9B8AC2, #9692BC,
+  #9298B8);
   width: 400px;
   height: 600px;
   position: absolute;

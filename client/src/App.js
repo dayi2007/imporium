@@ -11,6 +11,7 @@ import SignIn from "./screens/SignIn/SignIn";
 import SignOut from "./screens/SignOut/SignOut";
 import SignUp from "./screens/SignUp/SignUp";
 import { verifyUser } from "./services/users";
+import './'
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -27,7 +28,7 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Home user={user} />} />
-        <Route path="/sign-up" element={<SignUp setUser={setUser} />} />
+        <Route path="/sign-up" element={<SignUp setUser={setUser} /> } />
         <Route path="/sign-in" element={<SignIn setUser={setUser} />} />
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
         <Route exact path="/gallery" element={<Gallery user={user} />} />

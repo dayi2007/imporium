@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './Carousel.css'
 import {gsap} from "gsap";
 import imagesLoaded from "imagesloaded";
-import ima from "./butoo.png"
+
 
 const Carousel = () => {
 
@@ -276,88 +276,88 @@ waitForImages();
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
         <div className="app">
-          <div className="cardList">
+        <div className="cardList">
             <button className="cardList__btn btn btn--left">
-              <div className="icon">
+            <div className="icon">
                 <svg>
-                  <use xlinkHref="#arrow-left" />
+                <use xlinkHref="#arrow-left" />
                 </svg>
-              </div>
+            </div>
             </button>
             <div className="cards__wrapper">
-              <div className="card current--card">
+            <div className="card current--card">
                 <div className="card__image">
-                  <img src="https://lh3.googleusercontent.com/o_1BWLqxoSGMG34_nof3IwYbNAwH6SF7l3gi6_MxcDsOnyjobWbaNvrHyXpBKQG8EuwUieTYn9G4aK3y-eSjtHH8KIOw0GEUo7PlKw=w286" alt="hi" />
+                <img src="https://mkpcdn.com/500x/59860e5c61cd98ac36859545ed68620a_507876.jpg" alt="hi" />
                 </div>
-              </div>
-              <div className="card next--card">
+            </div>
+            <div className="card next--card">
                 <div className="card__image">
-                  <img src="https://storage.opensea.io/files/cf79e790f5de3d82506a35379a8164ed.svg" alt="bye" />
+                <img src="https://storage.opensea.io/files/cf79e790f5de3d82506a35379a8164ed.svg" alt="bye" />
                 </div>
-              </div>
-              <div className="card previous--card">
+            </div>
+            <div className="card previous--card">
                 <div className="card__image">
-                  <img src="https://lh3.googleusercontent.com/W6-gBHp_Kiu5sO75MvMUBE6GZY6JK5PWWXZPhdFFsL37A-99uJpCMxG8z3EDfGobANSdmQXDk5J0G88nSG2LCs8DX5XxVXiDjEKA5Q=w286" alt="sky" />
+                <img src="https://lh3.googleusercontent.com/W6-gBHp_Kiu5sO75MvMUBE6GZY6JK5PWWXZPhdFFsL37A-99uJpCMxG8z3EDfGobANSdmQXDk5J0G88nSG2LCs8DX5XxVXiDjEKA5Q=w286" alt="sky" />
                 </div>
-              </div>
+            </div>
             </div>
             <button className="cardList__btn btn btn--right">
-              <div className="icon">
+            <div className="icon">
                 <svg>
-                  <use xlinkHref="#arrow-right" />
+                <use xlinkHref="#arrow-right" />
                 </svg>
-              </div>
+            </div>
             </button>
-          </div>
-          <div className="infoList">
+        </div>
+        <div className="infoList">
             <div className="info__wrapper">
-              <div className="info current--info">
-                <h1 className="text name">Pixel Squad</h1>
-                <h4 className="text location">2838DG</h4>
-                <p className="text description">The pixels are calling</p>
-              </div>
-              <div className="info next--info">
+            <div className="info current--info">
+            <h1 className="text name">Escapism</h1>
+                <h4 className="text location">greekdx</h4>
+                <p className="home-text-description">Blur the boundary between fantasy and reality</p>
+            </div>
+            <div className="info next--info">
                 <h1 className="text name">OnChain Seaside</h1>
                 <h4 className="text location">
 FA7E6D</h4>
-                <p className="text description">Adventure is never far away</p>
-              </div>
-              <div className="info previous--info">
+                <p className="home-text-description">Adventure is never far away</p>
+            </div>
+            <div className="info previous--info">
                 <h1 className="text name">Polygon Vault</h1>
                 <h4 className="text location">40577C</h4>
-                <p className="text description">Let your dreams come true</p>
-              </div>
+                <p className="home-text-description">Let your dreams come true</p>
             </div>
-          </div>
-          <div className="app__bg">
+            </div>
+        </div>
+        <div className="app__bg">
             <div className="app__bg__image current--image">
-              <img src="https://lh3.googleusercontent.com/o_1BWLqxoSGMG34_nof3IwYbNAwH6SF7l3gi6_MxcDsOnyjobWbaNvrHyXpBKQG8EuwUieTYn9G4aK3y-eSjtHH8KIOw0GEUo7PlKw=w286" alt="" />
+            <img src="https://mkpcdn.com/500x/59860e5c61cd98ac36859545ed68620a_507876.jpg" alt="" />
             </div>
             <div className="app__bg__image next--image">
-              <img src="https://storage.opensea.io/files/cf79e790f5de3d82506a35379a8164ed.svg" alt="" />
+            <img src="https://storage.opensea.io/files/cf79e790f5de3d82506a35379a8164ed.svg" alt="" />
             </div>
             <div className="app__bg__image previous--image">
-              <img src="https://lh3.googleusercontent.com/W6-gBHp_Kiu5sO75MvMUBE6GZY6JK5PWWXZPhdFFsL37A-99uJpCMxG8z3EDfGobANSdmQXDk5J0G88nSG2LCs8DX5XxVXiDjEKA5Q=w286" alt="" />
+            <img src="https://lh3.googleusercontent.com/W6-gBHp_Kiu5sO75MvMUBE6GZY6JK5PWWXZPhdFFsL37A-99uJpCMxG8z3EDfGobANSdmQXDk5J0G88nSG2LCs8DX5XxVXiDjEKA5Q=w286" alt="" />
             </div>
-          </div>
+        </div>
         </div>
         <div className="loading__wrapper">
-          <div className="loader--text">Loading...</div>
-          <div className="loader">
+        <div className="loader--text">Loading...</div>
+        <div className="loader">
             <span />
-          </div>
+        </div>
         </div>
         <svg className="icons" style={{display: 'none'}}>
-          <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <polyline points="328 112 184 256 328 400" style={{fill: 'none', stroke: '#fff', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '48px'}} />
-          </symbol>
-          <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        </symbol>
+        <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <polyline points="184 112 328 256 184 400" style={{fill: 'none', stroke: '#fff', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '48px'}} />
-          </symbol>
+        </symbol>
         </svg>
         <div className="support">
-          <a href="https://twitter.com/DevLoop01" target="_blank"><i className="fab fa-twitter-square" /></a>
-          <a href="https://dribbble.com/devloop01" target="_blank"><i className="fab fa-dribbble" /></a>
+        <a href="https://twitter.com/DevLoop01" target="_blank"><i className="fab fa-twitter-square" /></a>
+        <a href="https://dribbble.com/devloop01" target="_blank"><i className="fab fa-dribbble" /></a>
         </div>
         </div>
     )

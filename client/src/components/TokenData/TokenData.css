@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
+
 .ether-img {
   height: 20px;
   width: 18px;
@@ -11,13 +13,14 @@
 }
 
 .price-history {
-  flex-direction: row;
+  display: inline-flex;
 }
 
 .header {
   height: 100px;
   text-align: center;
   padding-top: 35px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .foots {
