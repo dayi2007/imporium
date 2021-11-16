@@ -63,6 +63,9 @@ function swapCards(direction) {
 			currentBgImageEl.classList.add("previous--image");
 			previousBgImageEl.classList.add("next--image");
 			nextBgImageEl.classList.add("current--image");
+            
+            document.getElementsByClassName('home')[0].style.backgroundImage = `url(${nextBgImageEl.getElementsByTagName("img")[0].src})`;
+
 		} else if (direction === "left") {
 			previousCardEl.style.zIndex = "30";
 			nextCardEl.style.zIndex = "20";
@@ -76,6 +79,7 @@ function swapCards(direction) {
 			currentBgImageEl.classList.add("next--image");
 			previousBgImageEl.classList.add("current--image");
 			nextBgImageEl.classList.add("previous--image");
+            document.getElementsByClassName('home')[0].style.backgroundImage = `url(${previousBgImageEl.getElementsByTagName("img")[0].src})`;
 		}
 	}
 }
@@ -219,12 +223,10 @@ function init() {
 
 const waitForImages = () => {
 	const images = [...document.querySelectorAll("img")];
-    console.log(images)
 	const totalImages = images.length;
 	let loadedImages = 0;
 	const loaderEl = document.querySelector(".loader span");
 
-    console.log(gsap)
 	gsap.set(cardsContainerEl.children, {
 		"--card-translateY-offset": "100vh",
 	});
@@ -268,7 +270,6 @@ waitForImages();
     })
     return (
         <div className="carousel-div">
-        <div>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -286,17 +287,17 @@ waitForImages();
             <div className="cards__wrapper">
               <div className="card current--card">
                 <div className="card__image">
-                  <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="hi" />
+                  <img src="https://lh3.googleusercontent.com/o_1BWLqxoSGMG34_nof3IwYbNAwH6SF7l3gi6_MxcDsOnyjobWbaNvrHyXpBKQG8EuwUieTYn9G4aK3y-eSjtHH8KIOw0GEUo7PlKw=w286" alt="hi" />
                 </div>
               </div>
               <div className="card next--card">
                 <div className="card__image">
-                  <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="bye" />
+                  <img src="https://storage.opensea.io/files/cf79e790f5de3d82506a35379a8164ed.svg" alt="bye" />
                 </div>
               </div>
               <div className="card previous--card">
                 <div className="card__image">
-                  <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="sky" />
+                  <img src="https://lh3.googleusercontent.com/W6-gBHp_Kiu5sO75MvMUBE6GZY6JK5PWWXZPhdFFsL37A-99uJpCMxG8z3EDfGobANSdmQXDk5J0G88nSG2LCs8DX5XxVXiDjEKA5Q=w286" alt="sky" />
                 </div>
               </div>
             </div>
@@ -311,31 +312,32 @@ waitForImages();
           <div className="infoList">
             <div className="info__wrapper">
               <div className="info current--info">
-                <h1 className="text name">Highlands</h1>
-                <h4 className="text location">Scotland</h4>
-                <p className="text description">The mountains are calling</p>
+                <h1 className="text name">Pixel Squad</h1>
+                <h4 className="text location">2838DG</h4>
+                <p className="text description">The pixels are calling</p>
               </div>
               <div className="info next--info">
-                <h1 className="text name">Machu Pichu</h1>
-                <h4 className="text location">Peru</h4>
+                <h1 className="text name">OnChain Seaside</h1>
+                <h4 className="text location">
+FA7E6D</h4>
                 <p className="text description">Adventure is never far away</p>
               </div>
               <div className="info previous--info">
-                <h1 className="text name">Chamonix</h1>
-                <h4 className="text location">France</h4>
+                <h1 className="text name">Polygon Vault</h1>
+                <h4 className="text location">40577C</h4>
                 <p className="text description">Let your dreams come true</p>
               </div>
             </div>
           </div>
           <div className="app__bg">
             <div className="app__bg__image current--image">
-              <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+              <img src="https://lh3.googleusercontent.com/o_1BWLqxoSGMG34_nof3IwYbNAwH6SF7l3gi6_MxcDsOnyjobWbaNvrHyXpBKQG8EuwUieTYn9G4aK3y-eSjtHH8KIOw0GEUo7PlKw=w286" alt="" />
             </div>
             <div className="app__bg__image next--image">
-              <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+              <img src="https://storage.opensea.io/files/cf79e790f5de3d82506a35379a8164ed.svg" alt="" />
             </div>
             <div className="app__bg__image previous--image">
-              <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+              <img src="https://lh3.googleusercontent.com/W6-gBHp_Kiu5sO75MvMUBE6GZY6JK5PWWXZPhdFFsL37A-99uJpCMxG8z3EDfGobANSdmQXDk5J0G88nSG2LCs8DX5XxVXiDjEKA5Q=w286" alt="" />
             </div>
           </div>
         </div>
@@ -357,7 +359,6 @@ waitForImages();
           <a href="https://twitter.com/DevLoop01" target="_blank"><i className="fab fa-twitter-square" /></a>
           <a href="https://dribbble.com/devloop01" target="_blank"><i className="fab fa-dribbble" /></a>
         </div>
-      </div>
         </div>
     )
 }
