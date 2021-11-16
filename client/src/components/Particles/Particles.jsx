@@ -1,4 +1,4 @@
-import Particles from 'react-particles-js'
+import Particles from 'react-tsparticles';
 import './Particles.css'
 
 const particlesInit = (main) => {
@@ -53,7 +53,7 @@ const ParticlesEffect = () => {
               particles_nb: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
