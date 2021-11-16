@@ -287,7 +287,7 @@ waitForImages();
             <div className="cards__wrapper">
               <div className="card current--card">
                 <div className="card__image">
-                  <img src="https://lh3.googleusercontent.com/o_1BWLqxoSGMG34_nof3IwYbNAwH6SF7l3gi6_MxcDsOnyjobWbaNvrHyXpBKQG8EuwUieTYn9G4aK3y-eSjtHH8KIOw0GEUo7PlKw=w286" alt="hi" />
+                  <img src="https://mkpcdn.com/500x/59860e5c61cd98ac36859545ed68620a_507876.jpg" alt="hi" />
                 </div>
               </div>
               <div className="card next--card">
@@ -312,26 +312,26 @@ waitForImages();
           <div className="infoList">
             <div className="info__wrapper">
               <div className="info current--info">
-                <h1 className="text name">Pixel Squad</h1>
-                <h4 className="text location">2838DG</h4>
-                <p className="text description">The pixels are calling</p>
+              <h1 className="text name">Escapism</h1>
+                <h4 className="text location">greekdx</h4>
+                <p className="home-text-description">Blur the boundary between fantasy and reality</p>
               </div>
               <div className="info next--info">
                 <h1 className="text name">OnChain Seaside</h1>
                 <h4 className="text location">
 FA7E6D</h4>
-                <p className="text description">Adventure is never far away</p>
+                <p className="home-text-description">Adventure is never far away</p>
               </div>
               <div className="info previous--info">
                 <h1 className="text name">Polygon Vault</h1>
                 <h4 className="text location">40577C</h4>
-                <p className="text description">Let your dreams come true</p>
+                <p className="home-text-description">Let your dreams come true</p>
               </div>
             </div>
           </div>
           <div className="app__bg">
             <div className="app__bg__image current--image">
-              <img src="https://lh3.googleusercontent.com/o_1BWLqxoSGMG34_nof3IwYbNAwH6SF7l3gi6_MxcDsOnyjobWbaNvrHyXpBKQG8EuwUieTYn9G4aK3y-eSjtHH8KIOw0GEUo7PlKw=w286" alt="" />
+              <img src="https://mkpcdn.com/500x/59860e5c61cd98ac36859545ed68620a_507876.jpg" alt="" />
             </div>
             <div className="app__bg__image next--image">
               <img src="https://storage.opensea.io/files/cf79e790f5de3d82506a35379a8164ed.svg" alt="" />

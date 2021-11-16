@@ -6,6 +6,12 @@
 --card-transition-easing: ease;
 }
 
+p {
+    color: white;
+    font-family: "Montserrat";
+
+}
+
 .home {
 width: 100%;
 height: 100vh;
@@ -14,8 +20,8 @@ justify-content: center;
 align-items: center;
 overflow: scroll;
 background-repeat: no-repeat;
-background-size: cover;
-background-image: url(https://lh3.googleusercontent.com/o_1BWLqxoSGMG34_nof3IwYbNAwH6SF7l3gi6_MxcDsOnyjobWbaNvrHyXpBKQG8EuwUieTYn9G4aK3y-eSjtHH8KIOw0GEUo7PlKw=w286);
+background-size:100vw;
+background-image: url(https://mkpcdn.com/500x/59860e5c61cd98ac36859545ed68620a_507876.jpg);
 }
 
 button {
