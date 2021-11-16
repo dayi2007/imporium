@@ -1,6 +1,4 @@
-
-import Particles from 'react-tsparticles' 
-
+import Particles from 'react-tsparticles'
 import './Particles.css'
 
 const particlesInit = (main) => {
@@ -79,13 +77,13 @@ const ParticlesEffect = () => {
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              value_area: 1200,
+              value_area: 20000,
             },
             value: 80,
           },
