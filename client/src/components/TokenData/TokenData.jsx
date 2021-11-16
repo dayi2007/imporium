@@ -14,27 +14,27 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
       </section>
       
       <section className="description">
-      <h4>Description</h4>
+      <h4 className="desc-title">Description</h4>
       <p>{product.description}</p>
       </section>
       
       <div>
       <section className="price-history">
-        <h4>Price History</h4>
+        <h4 className="price-title">Price History</h4>
           
           <section className="history-wrapper">
             <section className="copies-wrapper">
-              <h6>Copies Sold:</h6>
+              <h6 className="subtitle-price">Copies Sold:</h6>
               <p>{product.copies}</p>
             </section>
           
           <section className="lowest-wrapper">
-            <h6>Lowest Price:</h6>
+            <h6 className="subtitle-price">Lowest Price:</h6>
             <p>{product.lowest}</p>
           </section>
           
           <section className="highest-wrapper">
-            <h6>Highest Price:</h6>
+            <h6 className="subtitle-price">Highest Price:</h6>
             <p>{product.highest}</p>
           </section>
         </section>
