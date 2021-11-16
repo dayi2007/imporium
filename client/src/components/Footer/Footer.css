@@ -1,1 +1,16 @@
-/* imporium */
+.footer {
+  bottom: 0;
+  position: fixed;
+  padding: 0 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+} 
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} 
