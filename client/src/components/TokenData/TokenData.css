@@ -11,7 +11,7 @@
 }
 
 .price-history {
-  flex-direction: row;
+  display: inline-flex;
 }
 
 .header {

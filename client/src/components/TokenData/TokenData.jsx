@@ -18,6 +18,7 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
       <p>{product.description}</p>
       </section>
       
+      <div>
       <section className="price-history">
         <h4>Price History</h4>
           
@@ -36,13 +37,13 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
             <h6>Highest Price:</h6>
             <p>{product.highest}</p>
           </section>
-        
         </section>
+        </section>
+      </div>
     <div className="foots">
         <section className="button-wrapper">
           <button className="buy">Buy Now</button>
           <button className="offer">Make Offer</button>
-          {/* Need Route & Need to pass product to screen */}
           <Link to={`/gallery/${product._id}/edit`}>Edit NFT</Link>
         </section>
         
@@ -52,7 +53,6 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
           <img className="imp-logo" src="#" />
         </section>
       </div>
-      </section>
     </div>
   )
 }
