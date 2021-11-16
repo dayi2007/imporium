@@ -28,7 +28,7 @@ const SignUp = (props) => {
     try {
       const user = await signUp(form)
       setUser(user)
-      useNavigate.push('/')
+      history('/gallery')
     } catch (error) {
       console.error(error)
       setForm({
