@@ -64,7 +64,7 @@ function swapCards(direction) {
 			previousBgImageEl.classList.add("next--image");
 			nextBgImageEl.classList.add("current--image");
             
-            document.getElementsByClassName('home')[0].style.backgroundImage = `url(${nextBgImageEl.getElementsByTagName("img")[0].src})`;
+            document.getElementsByClassName('newhome')[0].style.backgroundImage = `url(${nextBgImageEl.getElementsByTagName("img")[0].src})`;
 
 		} else if (direction === "left") {
 			previousCardEl.style.zIndex = "30";
@@ -79,7 +79,7 @@ function swapCards(direction) {
 			currentBgImageEl.classList.add("next--image");
 			previousBgImageEl.classList.add("current--image");
 			nextBgImageEl.classList.add("previous--image");
-            document.getElementsByClassName('home')[0].style.backgroundImage = `url(${previousBgImageEl.getElementsByTagName("img")[0].src})`;
+            document.getElementsByClassName('newhome')[0].style.backgroundImage = `url(${previousBgImageEl.getElementsByTagName("img")[0].src})`;
 		}
 	}
 }
