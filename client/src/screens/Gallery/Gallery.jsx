@@ -6,6 +6,7 @@ import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
 import Sort from "../../components/Sort/Sort";
 import Search from "../../components/Search/Search"
 import "./Gallery.css"
+import { Link } from "react-router-dom";
 
 const Gallery = (props) =>{
     const [cards, setCards] = useState([]);
@@ -51,7 +52,7 @@ const Gallery = (props) =>{
     
       const handleSearch = (event) => {
         const results = cards.filter((card) =>
-          card.name.toLowerCase().includes(event.target.value.toLowerCase())
+          card.title.toLowerCase().includes(event.target.value.toLowerCase())
         )
         setSearchResult(results)
         setApplySort(true)
@@ -67,14 +68,23 @@ const Gallery = (props) =>{
                     <Sort onSubmit={handleSubmit} handleSort={handleSort} />
                     <h1>Gallery</h1>
                     <div className="cards">
-                        {cards?.map((card) =>(                
-                            <div className="card-div" key={card.id}>
-                                <img src={card.image} alt={card.title}/>
-                            </div>                      
-                        )
+                        {cards?.map((card) =>(                                       
+                                <div className="card-div" key={card.id}>
+                                    <Link to={`/gallery/${card._id}`} > 
+                                      <img className="image" src={card.image} alt={card.title}/> 
+                                      <div className="hover-cards">
+                                        <span className="text">
+                                            <h3>{card.title}</h3>
+                                            <img className="eth" src="./eth-logo.png" alt="eth"/>
+                                            <h4>{card.price}</h4>
+                                        </span>
+                                      </div>
+                                    </Link>
+                                </div>        
+                              )
                         )} 
                     </div>        
-                </Layout>
+              </Layout>
             </div>
     )
 }
