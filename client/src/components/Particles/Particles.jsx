@@ -25,7 +25,7 @@ const ParticlesEffect = () => {
             value: "#13188D",
           },
         },
-        fpsLimit: 60,
+        fpsLimit: 30,
         interactivity: {
           events: {
             onClick: {
