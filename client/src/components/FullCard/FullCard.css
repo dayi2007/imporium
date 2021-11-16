@@ -14,6 +14,6 @@
   filter: drop-shadow(2px 10px 4px #723398)
 }
 
-/* .full-image {
-  
-} */
+.full-image {
+  z-index: 2;
+}

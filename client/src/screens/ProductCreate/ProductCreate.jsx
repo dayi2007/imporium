@@ -39,6 +39,7 @@ const ProductCreate = (props) => {
   }
 
   return (
+    <div>
     <Layout>
       <form className="create-form" onSubmit={handleSubmit}>
         <input
@@ -119,6 +120,7 @@ const ProductCreate = (props) => {
         </button>
       </form>
     </Layout>
+    </div>
   );
 };
 
