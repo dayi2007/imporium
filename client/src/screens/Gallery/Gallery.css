@@ -1,6 +1,6 @@
 .card-div{
-    width: 250px;
-    height: 250px; 
+    width: 350px;
+    height: 350px; 
     padding: 15px;
 } 
 img{
@@ -8,17 +8,29 @@ img{
 }
 .cards{
     display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 60px;
 }
 
 .gallery{
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    /* background-color: #fff; */
+    background-image: url(Rectangle1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    
+}
+/* body{
+    overflow: scroll;
+} */
+.cards:hover{
+    transition: 0.2s ease-in-out;
 
-background: conic-gradient(from 88.3deg at 0% 13.31%, rgba(114, 51, 152, 0) -101.25deg, #723398 49.93deg, rgba(114, 51, 152, 0) 258.75deg, #723398 409.93deg);
-mix-blend-mode: normal;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-} 
+}

@@ -17,16 +17,16 @@ const GalleryCards = () => {
     }, [])
     // console.log(cards)
 
-    // cards.map((card, index) =>
-    //     // index < 8 ?(
-    //         <GalleryCard
-    //            _id={card.id} 
-    //            name={card.name} 
-    //            img={card.img} 
-    //            key={index}             
-    //         />
-    //     // ): null
-    // )
+    cards.map((card, index) =>(
+        // index < 8 ?(
+            <GalleryCard
+               _id={card.id} 
+               name={card.name} 
+               img={card.img} 
+               key={index}             
+            />)
+        // ): null
+    )
 
     return (
       <div>

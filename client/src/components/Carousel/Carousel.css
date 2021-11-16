@@ -126,7 +126,7 @@ perspective: 1000px;
 }
 
 .card {
---card-translateY-offset: 100vh;
+--card-translateY-offset: -10vh !important;
 position: absolute;
 left: 50%;
 top: 50%;
