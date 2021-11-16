@@ -1,1 +1,129 @@
-/* imporium */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  background-color: #151630;
+}
+
+.form {
+  background-image: linear-gradient(#1391ff, #0145ff);
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 16px;
+  padding: 120px 50px;
+  box-shadow: 2px 2px 8px #000000ab;
+}
+
+.img-overlay::before {
+  content:'';
+  background-image: url();
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 600px;
+  opacity: 0.18;
+  z-index: -1;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.form h1 {
+  color: white;
+  font-size: large;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 0.7rem;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.8);
+}
+
+.inputs:hover {
+  border-bottom: 3px solid #fff;
+  transition: 0.2s ease-in-out;
+}
+
+#email, 
+#email::placeholder {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.5rem;
+  font-size: 0.8;
+  padding-bottom: 0.5;
+}
+
+#password, 
+#password::placeholder {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.5rem;
+  font-size: 0.8;
+  padding-bottom: 0.5;
+}
+
+.button {
+  width: 100%;
+  background: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 14px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0145ff;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  width: 100%;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 14px 14px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3 ease-in-out;
+}
+/* ease-in-out is the transition we have been looking for
+ Learned to style button and placeholders*/
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
