@@ -36,9 +36,11 @@ const ProductDetail = ({user}) => {
       <div className="product-detail-page">
       <Layout>
         <div className="innerdiv">
+          <div className="carddiv">
         <FullCard
           product={product}
           />
+          </div>
           <div className="tokendiv">
         <TokenData
           product={product}

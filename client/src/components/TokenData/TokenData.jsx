@@ -38,7 +38,7 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
           </section>
         
         </section>
-
+    <div className="foots">
         <section className="button-wrapper">
           <button className="buy">Buy Now</button>
           <button className="offer">Make Offer</button>
@@ -51,7 +51,7 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
           <h2>{product.price}</h2>
           <img className="imp-logo" src="#" />
         </section>
-        
+      </div>
       </section>
     </div>
   )

@@ -1,8 +1,35 @@
 .ether-img {
-  height: 100px;
-  width: 100px;
+  height: 20px;
+  width: 18px;
 }
 
 .description {
-  width: 500px;
+  width: 506px;
+  background-color: white;
+  font-size: 12px;
+  height: 100px;
+}
+
+.price-history {
+  flex-direction: row;
+}
+
+.header {
+  height: 100px;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.foots {
+  background-color: white;
+  display: inline-flex;
+  width: 100%;
+}
+.button-wrapper {
+  display: inline-block;
+  background-color: white;
+}
+
+.token-footer {
+  background-color: white;
 }
