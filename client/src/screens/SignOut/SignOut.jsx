@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 const SignOut = (props) => {
   const { setUser } = props
-  const navigate = useNavigate()
+  const history = useNavigate()
 
   useEffect(() => {
     const signOutUser = async () => {

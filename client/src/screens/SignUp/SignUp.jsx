@@ -4,7 +4,8 @@ import { signUp } from '../../services/users'
 import { useNavigate } from 'react-router-dom'
 
 const SignUp = (props) => {
-  const navigate = useNavigate()
+  const history = useNavigate()
+
 
   const [form, setForm] = useState({
     username: '',
