@@ -26,7 +26,9 @@ const SignIn = (props) => {
     try {
       const user = await signIn(form)
       setUser(user)
+
       history('/gallery')
+
     } catch (error) {
       console.error(error)
       setForm({
