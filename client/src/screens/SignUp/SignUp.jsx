@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const SignUp = (props) => {
   const history = useNavigate()
 
+
   const [form, setForm] = useState({
     username: '',
     email: '',
@@ -27,7 +28,7 @@ const SignUp = (props) => {
     try {
       const user = await signUp(form)
       setUser(user)
-      history.push('/')
+      useNavigate.push('/')
     } catch (error) {
       console.error(error)
       setForm({
