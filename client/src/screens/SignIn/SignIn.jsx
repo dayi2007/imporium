@@ -4,6 +4,11 @@ import { signIn } from '../../services/users'
 import { useNavigate } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout.jsx';
 
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
+
 const SignIn = (props) => {
   const history = useNavigate()
 
@@ -45,12 +50,12 @@ const SignIn = (props) => {
     const toggleForm = form.isError ? 'danger' : ''
     if (form.isError) {
       return (
-        <button id="button" type='submit' className={toggleForm}>
+        <button id="signin-button" type='submit' className={toggleForm}>
           {form.errorMsg}
         </button>
       )
     } else {
-      return <button id="button" type='submit'>Sign In</button>
+      return <button id="signin-button" type='submit'>Sign In</button>
     }
   }
 
