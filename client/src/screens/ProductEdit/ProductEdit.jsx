@@ -3,8 +3,9 @@ import Layout from '../../components/Layout/Layout.jsx';
 import { useParams } from 'react-router-dom';
 import { getProduct, updateProduct, deleteProduct } from "../../services/products";
 import { Navigate } from 'react-router';
+import './ProductEdit.css';
 
-const ProductEdit = () => {
+const ProductEdit = (props) => {
   const [product, setProduct] = useState({
     title: '',
     creator: '',
@@ -46,18 +47,19 @@ const ProductEdit = () => {
   }
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className="edit-page">
         
-        <section className="display-section">
-          <img className="full-image" src={product.image} />
-          <h2 className="full-title">{product.title}</h2>
-          <h3 className="full-creator">{product.creator}</h3>
+        <section className="preview-card">
+          <img className="preview-image" src={product.image} />
+          <h2 className="preview-title">{product.title}</h2>
+          <h3 className="preview-creator">{product.creator}</h3>
         </section> 
       
         <section className="form-wrapper">
-          <form onSubmit={handleSubmit}>
+          <form className="form-edit" onSubmit={handleSubmit}>
             <input
+              className="for-inputs"
               className="input-title"
               placeholder="Title"
               value={product.title}
@@ -67,7 +69,8 @@ const ProductEdit = () => {
               onChange={handleChange}
           />
           
-          <input
+            <input
+            className="for-inputs"
             className="input-creator"
             placeholder="Creator"
             value={product.creator}
@@ -77,7 +80,8 @@ const ProductEdit = () => {
             onChange={handleChange}
           />
           
-          <input
+            <input
+            className="for-inputs"
             className="input-image"
             placeholder="Image URL"
             value={product.image}
@@ -87,7 +91,8 @@ const ProductEdit = () => {
             onChange={handleChange}
           />
           
-          <textarea
+            <textarea
+            
             className="input-description"
             rows={10}
             cols={78}
@@ -99,7 +104,8 @@ const ProductEdit = () => {
             onChange={handleChange}
           />
           
-          <input
+            <input
+              className="for-inputs"
             className="input-price"
             placeholder="Price"
             value={product.price}
@@ -109,7 +115,8 @@ const ProductEdit = () => {
             onChange={handleChange}
           />
           
-          <input
+            <input
+              className="for-inputs"
             className="input-copies"
             placeholder="Copies"
             value={product.copies}
@@ -119,7 +126,8 @@ const ProductEdit = () => {
             onChange={handleChange}
           />
           
-          <input
+            <input
+              className="for-inputs"
             className="input-lowest"
             placeholder="Lowest Price"
             value={product.lowest}
@@ -129,7 +137,8 @@ const ProductEdit = () => {
             onChange={handleChange}
           />
           
-          <input
+            <input
+              className="for-inputs"
             className="input-highest"
             placeholder="Highest Price"
             value={product.highest}
@@ -145,8 +154,15 @@ const ProductEdit = () => {
               className='delete-button'
               onClick={() => deleteProduct(product._id)}>Delete
           </button>
-        </section>
-        </form>
+            </section>
+            <div className="drops">
+    <div className="dropx drop-1"></div>
+    <div className="dropx drop-2"></div>
+    <div className="dropx drop-3"></div>
+    <div classN="dropx drop-4"></div>
+    <div class="dropx drop-5"></div>
+  </div>
+          </form>
       </section>
     </div>
     </Layout>
