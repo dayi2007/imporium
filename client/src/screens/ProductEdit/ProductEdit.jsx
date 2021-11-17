@@ -43,7 +43,7 @@ const ProductEdit = (props) => {
   }
 
   if (isUpdated) {
-    return <Navigate to={`/products/${id}`} />
+    return <Navigate to={`/gallery/${id}`} />
   }
 
   return (
