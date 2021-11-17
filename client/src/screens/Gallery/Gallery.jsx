@@ -70,7 +70,7 @@ const Gallery = (props) =>{
                     <Sort onSubmit={handleSubmit} handleSort={handleSort} />
                     <h1>Gallery</h1>
                     <div className="cards">
-                        {cards?.map((card) =>(                                       
+                        {searchResult?.map((card) =>(                                       
                                 <div className="card-div" key={card.id}>
                                     <Link to={`/gallery/${card._id}`} > 
                                       <img className="image" src={card.image} alt={card.title}/> 
