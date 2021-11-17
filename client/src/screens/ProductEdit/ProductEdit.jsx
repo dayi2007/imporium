@@ -58,6 +58,7 @@ const ProductEdit = (props) => {
       
         <section className="form-wrapper">
           <form className="form-edit" onSubmit={handleSubmit}>
+          <h4 className="sub-headers">Title</h4>
             <input
               className="for-inputs"
               className="input-title"
@@ -68,7 +69,7 @@ const ProductEdit = (props) => {
               autoFocus
               onChange={handleChange}
           />
-          
+          <h4 className="sub-headers">Creator</h4>
             <input
             className="for-inputs"
             className="input-creator"
@@ -79,7 +80,7 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          
+          <h4 className="sub-headers">Image URL</h4>
             <input
             className="for-inputs"
             className="input-image"
@@ -90,7 +91,8 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          
+            <h4 className="sub-headers">Description</h4>
+            <br />
             <textarea
             
             className="input-description"
@@ -102,8 +104,9 @@ const ProductEdit = (props) => {
             required
             autoFocus
             onChange={handleChange}
-          />
-          
+            />
+            <br />
+          <h4 className="sub-headers">Price</h4>
             <input
               className="for-inputs"
             className="input-price"
@@ -114,7 +117,7 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          
+          <h4 className="sub-headers">Copies Sold</h4>
             <input
               className="for-inputs"
             className="input-copies"
@@ -125,7 +128,7 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          
+          <h4 className="sub-headers">Lowest Price</h4>
             <input
               className="for-inputs"
             className="input-lowest"
@@ -136,7 +139,7 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          
+            <h4 className="sub-headers">Highest Price</h4>
             <input
               className="for-inputs"
             className="input-highest"
