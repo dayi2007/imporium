@@ -4,20 +4,29 @@
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   color: white;
-  filter: drop-shadow(0 0 0.95rem crimson)
+  filter: drop-shadow(0 0 0.95rem crimson);
+  margin-left: 40%;
+  width: fit-content;
+  margin-top: 5%;
 }
 
 .full-creator {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   color: white;
-  filter: drop-shadow(2px 10px 4px #723398)
+  filter: drop-shadow(2px 10px 4px #723398);
+  margin-left: 32%;
 }
 
 .full-image {
   z-index: 7;
-  max-height: 450px;
-  max-width: 350px;
+  max-height: 800px;
+  max-width: 550px;
   box-shadow: 10px 10px 5px black;
-  margin-top: 15%;
+}
+
+.full-card {
+  margin-top: 8%;
+  margin-left: 25%;
+  text-align: center;
 }

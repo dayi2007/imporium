@@ -8,7 +8,7 @@ import TokenData from '../../components/TokenData/TokenData.jsx';
 import './ProductDetail.css';
 
 
-const ProductDetail = ({user}) => {
+const ProductDetail = (props) => {
 
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
@@ -33,7 +33,7 @@ const ProductDetail = ({user}) => {
       
     <div className="product-detail-page">
       
-      <Layout>
+      <Layout user={props.user}>
       
         <div className="innerdiv">
           <div className="carddiv">
