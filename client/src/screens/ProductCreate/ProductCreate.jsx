@@ -40,9 +40,11 @@ const ProductCreate = (props) => {
 
   return (
     <div>
-    <Layout>
+      <Layout user={props.user}>
+        <div className='create-container'>
+          <h2>Upload NFT</h2>
       <form className="create-form" onSubmit={handleSubmit}>
-        <input
+        <input className='input-create-form'
           className="input-title"
           placeholder="Title"
           value={product.title}
@@ -51,7 +53,7 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input
+        <input className='input-create-form'
           className="input-creator"
           placeholder="Creator"
           value={product.creator}
@@ -60,7 +62,7 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input
+        <input className='input-create-form'
           className="input-image-link"
           placeholder="Image Link"
           value={product.image}
@@ -69,8 +71,8 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input
-          className="input-description"
+        <input className='input-create-form'
+          className="textarea-description"
           rows={8}
           placeholder="Description"
           value={product.description}
@@ -79,7 +81,7 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input
+        <input className='input-create-form'
           className="input-price"
           placeholder="Price"
           value={product.price}
@@ -88,7 +90,7 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input
+        <input className='input-create-form'
           className="input-copies"
           placeholder="Copies Sold"
           value={product.copies}
@@ -97,7 +99,8 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input
+            <input
+              className='input-create-form'
           className="input-lowest"
           placeholder="Lowest Price"
           value={product.lowest}
@@ -106,7 +109,8 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input
+            <input
+              className='input-create-form'
           className="input-highest"
           placeholder="Highest Price"
           value={product.highest}
@@ -116,9 +120,21 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <button type="submit" className="submit-button">
-          Submit
+          Upload
         </button>
+          {/* <div className='create-card'>
+            <img className='create-image' src='https://lh3.googleusercontent.com/vlQEqUysLvGutBwQyeA2ELMkgNuy3AqaZGvusXYWIvfZ57PSOY2rF9bTKfPfH63gXTWm2TvIt2BJz_KZcuE9L7lqywJOs47MVuXd5g=s0'>
+            </img>
+          </div> */}
+           <div class="create-drops">
+            <div class="dropy dropy-1"></div>
+            <div class="dropy dropy-2"></div>
+            <div class="dropy dropy-3"></div>
+            <div class="dropy dropy-4"></div>
+            <div class="dropy dropy-5"></div>
+          </div> 
       </form>
+      </div>
     </Layout>
     </div>
   );
