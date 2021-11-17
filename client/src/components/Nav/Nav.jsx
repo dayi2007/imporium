@@ -1,5 +1,6 @@
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
+import imporium from './imporium.png'
 
 const authenticatedOptions = (
   <>
@@ -35,8 +36,9 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="logo" to="/">
+        <NavLink className='logo' to="/">
           Imporium
+          {/* <img src={imporium} className="logo"/> */}
         </NavLink>
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.username}</div>}
