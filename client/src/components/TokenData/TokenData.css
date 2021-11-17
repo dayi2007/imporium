@@ -148,6 +148,34 @@ text-shadow: 1px -1px 1px rgba(143, 162, 199, 0.75),
   margin-top: 5%;
 }
 
+@media only screen and (max-width: 600px) {
+  .token-data-card {
+    max-height: 400px;
+    max-width: 400px;
+    margin-top: 15%;
+    margin: auto;
+  }
+
+  .description {
+    max-width:380px;
+  }
+
+  .token-footer {
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow: 10px 14px 14px rgba(0, 0, 0, 0.55);
+    margin-top: 10%;
+    background-color: #723398;
+    border-radius: 0px 0px 16px 16px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .token-data-card {
+    max-height: fit-content;
+  }
+}
+
 /* .trig {
   background: rgba(116, 44, 175, 0.493);
   backdrop-filter: blur(10px);
