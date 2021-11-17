@@ -71,8 +71,8 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <input className='input-create-form'
-          className="textarea-description"
+        <textarea className='textarea-create-form'
+          // className="textarea-description"
           rows={8}
           placeholder="Description"
           value={product.description}
@@ -99,8 +99,7 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-            <input
-              className='input-create-form'
+        <input className='input-create-form'
           className="input-lowest"
           placeholder="Lowest Price"
           value={product.lowest}
@@ -109,8 +108,8 @@ const ProductCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-            <input
-              className='input-create-form'
+        <input
+          className='input-create-form'
           className="input-highest"
           placeholder="Highest Price"
           value={product.highest}
@@ -122,11 +121,7 @@ const ProductCreate = (props) => {
         <button type="submit" className="submit-button">
           Upload
         </button>
-          {/* <div className='create-card'>
-            <img className='create-image' src='https://lh3.googleusercontent.com/vlQEqUysLvGutBwQyeA2ELMkgNuy3AqaZGvusXYWIvfZ57PSOY2rF9bTKfPfH63gXTWm2TvIt2BJz_KZcuE9L7lqywJOs47MVuXd5g=s0'>
-            </img>
-          </div> */}
-           <div class="create-drops">
+          <div class="create-drops">
             <div class="dropy dropy-1"></div>
             <div class="dropy dropy-2"></div>
             <div class="dropy dropy-3"></div>
