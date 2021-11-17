@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
-import About from "./screens/About/About";
+import AboutUs from "./screens/About/About.jsx";
 import Home from "./screens/Home/Home";
 import Gallery from "./screens/Gallery/Gallery";
 import ProductCreate from "./screens/ProductCreate/ProductCreate";
@@ -48,7 +48,7 @@ const App = () => {
           }
         />
         <Route exact path="/gallery/:id" element={<ProductDetail user={user} />} />
-        <Route exact path="/about" element={<About user={user} />} />
+        <Route exact path="/about" element={<AboutUs setUser={setUser} />}/>
       </Routes>
     </div>
   );
