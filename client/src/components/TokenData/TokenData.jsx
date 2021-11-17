@@ -44,7 +44,7 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
         <section className="button-wrapper">
           <button className="buy">Buy Now</button>
           <button className="offer">Make Offer</button>
-          <Link to={`/gallery/${product._id}/edit`}>Edit NFT</Link>
+          <Link className="edit" to={`/gallery/${product._id}/edit`}><p>Edit NFT</p></Link>
         </section>
         
         <section className="token-footer">
