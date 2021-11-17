@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
 
 .search-form{
-    
-position: absolute;
-width: 262px;
-height: 38px;
-left: 1137px;
-top: 139px;
 
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    width: 262px;
+    height: 28px;
+    left: 1400px;
+    top: 110px;
+
+}
+.search-input{
+
+    font-family: 'Orbitron', sans-serif; 
+    width: 173px;
+    height: 28px; 
+    padding: 10px;
 }
