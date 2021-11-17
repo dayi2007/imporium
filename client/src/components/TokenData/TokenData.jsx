@@ -1,6 +1,7 @@
 import './TokenData.css'
 import { Link } from 'react-router-dom';
 import eth from './eth-logo.png'
+import imp from './implogo.png'
 
 
 
@@ -50,8 +51,15 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
         <section className="token-footer">
           <img className="ether-img" src={eth} />
           <h2 className="price-disp">{product.price}</h2>
-          <img className="imp-logo" src="#" />
+          <img className="imp-logo" src={imp} />
         </section>
+        {/* <div className="trigs">
+    <div className="trig trig-1"></div>
+    <div className="trig trig-2"></div>
+    <div className="trig trig-3"></div>
+    <div classN="trig trig-4"></div>
+    <div class="trig trig-5"></div>
+  </div> */}
       </div>
     </div>
   )
