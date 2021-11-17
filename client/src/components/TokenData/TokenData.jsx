@@ -49,7 +49,7 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
         
         <section className="token-footer">
           <img className="ether-img" src={eth} />
-          <h2>{product.price}</h2>
+          <h2 className="price-disp">{product.price}</h2>
           <img className="imp-logo" src="#" />
         </section>
       </div>
