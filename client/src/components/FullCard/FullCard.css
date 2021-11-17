@@ -6,6 +6,7 @@
   color: white;
   filter: drop-shadow(0 0 0.95rem crimson);
   align-items: center;
+  margin-top: 5%;
 }
 
 .full-creator {
@@ -13,6 +14,7 @@
   text-align: center;
   color: white;
   filter: drop-shadow(2px 10px 4px #723398);
+  margin-bottom: 10%;
 }
 
 .full-image {
@@ -24,4 +26,12 @@
 
 .full-card {
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .full-image {
+    max-height: 400px;
+    max-width: 400px;
+    margin-top: 15%;
+  }
 }
