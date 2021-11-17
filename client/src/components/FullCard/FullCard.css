@@ -4,7 +4,7 @@
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   color: white;
-  filter: drop-shadow(0 0 0.75rem crimson)
+  filter: drop-shadow(0 0 0.95rem crimson)
 }
 
 .full-creator {
@@ -15,5 +15,9 @@
 }
 
 .full-image {
-  z-index: 2;
+  z-index: 7;
+  max-height: 450px;
+  max-width: 350px;
+  box-shadow: 10px 10px 5px black;
+  margin-top: 15%;
 }

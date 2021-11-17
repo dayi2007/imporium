@@ -68,7 +68,7 @@ const Gallery = (props) =>{
                 <Layout user={props.user}>
                     <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
                     <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-                    <h1>Gallery</h1>
+                    {/* <h1>Gallery</h1> */}
                     <div className="cards">
                         {searchResult?.map((card) =>(                                       
                                 <div className="card-div" key={card.id}>
