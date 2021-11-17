@@ -40,7 +40,7 @@ const ProductCreate = (props) => {
 
   return (
     <div>
-    <Layout>
+    <Layout user={props.user}>
       <form className="create-form" onSubmit={handleSubmit}>
         <input
           className="input-title"
@@ -117,7 +117,11 @@ const ProductCreate = (props) => {
         />
         <button type="submit" className="submit-button">
           Submit
-        </button>
+          </button>
+          <div className='create-card'>
+            <img className='create-image' src='https://lh3.googleusercontent.com/vlQEqUysLvGutBwQyeA2ELMkgNuy3AqaZGvusXYWIvfZ57PSOY2rF9bTKfPfH63gXTWm2TvIt2BJz_KZcuE9L7lqywJOs47MVuXd5g=s0'>
+            </img>
+          </div>
       </form>
     </Layout>
     </div>
