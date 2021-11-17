@@ -26,6 +26,9 @@ const alwaysOptions = (
     <NavLink className="link" to="/gallery">
       Gallery
     </NavLink>
+    <NavLink className="link" to="/about">
+      About
+    </NavLink>
   </>
 );
 const Nav = ({ user }) => {
