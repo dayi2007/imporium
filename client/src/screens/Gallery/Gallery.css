@@ -1,56 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
 
+.gallery{
+
+    display: flex;
+}
 .card-div{
+
     width: 350px;
     height: 350px; 
     position: relative;
-    margin: 15px;
+    padding: 8px;
+    display: flex;
+    margin: 10px;
+    align-content: space-between;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+
 } 
 .image{
+
     width: 100%;
-    background-color: #fff;
+    min-width: 334px;
+    max-height: 334px;
+    border-radius: 10px;
 }
 .cards{
+
     display: flex;
     width: fit-content;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 60px;
-    margin-top: 85px;
+    margin-top: 0px;
     padding: 15px;
+    align-content: space-around;
+    justify-content: space-between;        
 }
-.col {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    padding-top: 0px;
-    text-align: center;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 .row{
+
     display: flex;
-    width: 230px;
+    align-items: center;
+    justify-content: center;
 }
 h3{
+
     font-family: 'Orbitron', sans-serif;
     margin: 5px;
 }
 .card-title{
+
     font-family: 'Orbitron', sans-serif;
     margin-top: 0px;
-    padding-top: 25px;
+    padding-top: 0px;
     margin-bottom: 5px;
     width: 300px;
   }
 .text {
-    color: #000;
+
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    filter: drop-shadow(0 0 0.95rem #723398);
     font-size: 20px;
     position: absolute;
-    text-decoration: none;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -59,11 +70,15 @@ h3{
     text-align: center;
 }
 .card-div:hover .hover-cards{
+
     transition: 0.2s ease-in-out;
-    opacity: 0.7;
-    padding: 0px;
+    opacity: 1;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .hover-cards {
+
     position: absolute;
     top: 70%;
     bottom: 0;
@@ -72,14 +87,29 @@ h3{
     height: 30%;
     width: 100%;
     opacity: 0;
+    padding: 15px;
     transition: .5s ease;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background: rgba(238, 229, 229, 0.835);
     padding: 0;
+    box-shadow: 7px 7px 5px #71339883;
 }
 .eth{
+
       width: 30px;
       height: 30px;
 }
 .search-sort{
+
     display: flex;
+    height: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-right: 90px;
+    margin-top: 30px;
 }
