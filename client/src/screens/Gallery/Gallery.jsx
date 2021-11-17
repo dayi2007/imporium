@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../services/products";
 import Layout from '../../components/Layout/Layout';
-// import GalleryCard from "../../components/GalleryCard/GalleryCard.jsx";
-import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
+import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort';
 import Sort from "../../components/Sort/Sort";
-import Search from "../../components/Search/Search"
-import "./Gallery.css"
+import Search from "../../components/Search/Search";
+import "./Gallery.css";
 import { Link } from "react-router-dom";
 import eth from "./eth-logo.png";
+
 
 const Gallery = (props) =>{
     const [cards, setCards] = useState([]);
@@ -66,8 +66,9 @@ const Gallery = (props) =>{
     return(
             <div className="gallery">
                 <Layout user={props.user}>
+                  <div className="search-sort">
                     <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-                    <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+                    <Sort onSubmit={handleSubmit} handleSort={handleSort} /></div>
                     {/* <h1>Gallery</h1> */}
                     <div className="cards">
                         {searchResult?.map((card) =>(                                       
@@ -76,13 +77,13 @@ const Gallery = (props) =>{
                                       <img className="image" src={card.image} alt={card.title}/> 
                                       <div className="hover-cards">
                                         <span className="text">
-                                          <h3>{card.title}</h3>
+                                          <h3 className="card-title">{card.title}</h3>
                                           <div className="row">
                                               <div className="col">
                                                 <img className="eth" src={eth} alt="eth"/>
                                               </div>
                                               <div className="col">
-                                                <h2>{card.price}</h2>
+                                                <h3>{card.price}</h3>
                                               </div>
                                           </div>
                                         </span>

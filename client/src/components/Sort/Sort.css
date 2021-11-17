@@ -1,10 +1,18 @@
-.sort-container{
-    
-position: absolute;
-display: flex;
-width: 173px;
-height: 38px;
-left: 60px;
-top: 110px;
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
 
+.sort-container{
+
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    display: flex;
+    width: 173px;
+    height: 28px;
+    left: 100px;
+    top: 110px;
+
+}
+
+
+.sort{
+    font-family: 'Orbitron', sans-serif;  
 }
