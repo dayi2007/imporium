@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Layout from '../../components/Layout/Layout.jsx';
 import { useParams } from 'react-router-dom';
 import { getProduct, updateProduct, deleteProduct } from "../../services/products";
-import { Navigate } from 'react-router';
+import { Navigate } from 'react-router-dom';
 import './ProductEdit.css';
 
 const ProductEdit = (props) => {
@@ -18,7 +18,8 @@ const ProductEdit = (props) => {
   })
 
   const [isUpdated, setUpdated] = useState(false)
-  let {id} = useParams()
+  const [isDeleted, setDeleted] = useState(false)
+  let { id } = useParams()
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -44,6 +45,15 @@ const ProductEdit = (props) => {
 
   if (isUpdated) {
     return <Navigate to={`/gallery/${id}`} />
+  }
+
+  const handleDelete = async () => {
+    const deleted = await deleteProduct(product._id);
+    setDeleted({ deleted });
+  };
+
+  if (isDeleted) {
+    return <Navigate to="/gallery" />;
   }
 
   return (
@@ -155,7 +165,8 @@ const ProductEdit = (props) => {
           <button type="submit" className="save-button">Save</button>
           <button
               className='delete-button'
-              onClick={() => deleteProduct(product._id)}>Delete
+                onClick={handleDelete}>
+                Delete
           </button>
             </section>
             <div className="drops">
