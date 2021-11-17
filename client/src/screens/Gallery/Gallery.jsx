@@ -64,12 +64,13 @@ const Gallery = (props) =>{
     
 
     return(
-            <div className="gallery">
+            <div>
                 <Layout user={props.user}>
                   <div className="search-sort">
-                    <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-                    <Sort onSubmit={handleSubmit} handleSort={handleSort} /></div>
-                    {/* <h1>Gallery</h1> */}
+                    <Sort className="sort" onSubmit={handleSubmit} handleSort={handleSort}/> 
+                    <Search className="search" onSubmit={handleSubmit} handleSearch={handleSearch}/>                
+                    </div>
+                  <div className="gallery">
                     <div className="cards">
                         {searchResult?.map((card) =>(                                       
                                 <div className="card-div" key={card.id}>
@@ -92,7 +93,8 @@ const Gallery = (props) =>{
                                 </div>        
                               )
                         )} 
-                    </div>        
+                    </div> 
+                  </div>       
               </Layout>
             </div>
     )
