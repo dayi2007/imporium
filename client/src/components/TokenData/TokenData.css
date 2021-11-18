@@ -150,7 +150,7 @@ text-shadow: 1px -1px 1px rgba(143, 162, 199, 0.75),
 
 @media only screen and (max-width: 600px) {
   .token-data-card {
-    max-height: 400px;
+    /* max-height: 400px; */
     max-width: 400px;
     margin-top: 15%;
     margin: auto;
@@ -170,57 +170,3 @@ text-shadow: 1px -1px 1px rgba(143, 162, 199, 0.75),
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .token-data-card {
-    max-height: fit-content;
-  }
-}
-
-/* .trig {
-  background: rgba(116, 44, 175, 0.493);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
-  box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
-  position: absolute;
-  transition: all 0.2s ease;
-}
-
-.trig-1 {
-  height: 80px;
-  width: 80px;
-  top: 130px;
-  left: 822px;
-  z-index: -1;
-}
-
-.trig-2 {
-  height: 80px;
-  width: 80px;
-  bottom: 400px;
-  right: 40px;
-}
-
-.trig-3 {
-  height: 100px;
-  width: 100px;
-  bottom: 150px;
-  right: 100px;
-  z-index: -1;
-}
-
-.trig-4 {
-  height: 4000px;
-  width: 14420px;
-  top: 10px;
-  right: 760px;
-}
-
-.trig-5 {
-  height: 50px;
-  width: 50px;
-  bottom: 180px;
-  left: 800px;
-  z-index: -1;
-} */

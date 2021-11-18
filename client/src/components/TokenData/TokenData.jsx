@@ -53,13 +53,6 @@ const TokenData = ({ product, updateProduct, deleteProduct }) => {
           <h2 className="price-disp">{product.price}</h2>
           <img className="imp-logo" src={imp} />
         </section>
-        {/* <div className="trigs">
-    <div className="trig trig-1"></div>
-    <div className="trig trig-2"></div>
-    <div className="trig trig-3"></div>
-    <div classN="trig trig-4"></div>
-    <div class="trig trig-5"></div>
-  </div> */}
       </div>
     </div>
   )
