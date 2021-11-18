@@ -1,6 +1,8 @@
 import "./Nav.css";
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import logo from "./logo-smaller.png";
+
 
 const authenticatedOptions = (
   <>
@@ -33,9 +35,15 @@ const alwaysOptions = (
   </>
 );
 const Nav = ({ user }) => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  }
   return (
     <nav>
       <div className="nav">
+      <button onClick={handleToggle}>{navbarOpen ? "Close" : "Open"}</button>
         <NavLink className="logo" to="/">
           {/* Imporium */}
           <img src={logo} alt="logo" className="logo" />

@@ -24,6 +24,8 @@ const App = () => {
     fetchUser();
   }, []);
 
+  document.title = 'Imporium-NFT.com';
+
   return (
     <div className="App">
       <Routes>
