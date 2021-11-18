@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 .create-form {
   display: flex;
   flex-direction: column;
@@ -19,9 +19,10 @@
   backdrop-filter: blur(10px);
   box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
   text-align: center;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   transition: all 0.2s ease-in-out;
 }
 .create-form input{
@@ -37,13 +38,16 @@
   height: 50px;
 }
   .create-container h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
     font-weight: 500;
-    color: black;
-    opacity: 0.7;
+    letter-spacing: 3px;
+    color: white;
     font-size: 1.4rem;
     margin-top: 10%;
-    margin-bottom: 60px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.351);
   } 
   
   .input-create-form {
@@ -54,14 +58,14 @@
     border: none;
     border-left: 1px solid white;
     border-top: 1px solid white;
-    border-radius: 5000px;
+    /* border-radius: 5000px; */
     backdrop-filter: blur(5px);
-    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    /* box-shadow: 4px 4px 60px rgba(0,0,0,0.2); */
     color: black;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.2); */
   }
   .textarea-create-form {
     width: 345px;
@@ -73,6 +77,7 @@
     border-left: 1px solid white;
     border-top: 1px solid white;
     border-radius: 5px;
+    border:solid 2px rgba(74, 62, 179, 0.817);
     backdrop-filter: blur(4px);
     box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
     color: black;
@@ -114,7 +119,7 @@
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   color: black;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  /* text-shadow: 2px 2px 4px rgba(0,0,0,0.4); */
 }
 
 .create-drops {

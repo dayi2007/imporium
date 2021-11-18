@@ -42,7 +42,7 @@ const ProductCreate = (props) => {
     <div>
       <Layout user={props.user}>
         <div className="create-container">
-          <h2>Upload NFT</h2>
+          <h2>Ready to sell? Upload your NFT!</h2>
           <form className="create-form" onSubmit={handleSubmit}>
             <input
               className="input-create-form"
@@ -134,7 +134,7 @@ const ProductCreate = (props) => {
               onChange={handleChange}
             />
             <button type="submit" className="submit-button">
-              Upload
+              upload
             </button>
             <div class="create-drops">
               <div class="dropy dropy-1"></div>
