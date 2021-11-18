@@ -12,3 +12,17 @@ canvas {
     bottom: 0;
     z-index: -1 !important;
   }
+
+  @media only screen and (max-width: 600px) {
+    canvas {
+      display: 100%;
+      background-size: cover;
+    }
+  }
+
+  @media only screen and (max-width: 1366px) {
+    canvas {
+      display: 100%;
+      background-size: cover;
+    }
+  }
