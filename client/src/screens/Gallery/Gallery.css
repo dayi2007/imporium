@@ -31,7 +31,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin: 60px;
-    margin-top: 10px;
+    margin-top: 0;
     padding: 15px;
     align-content: space-around;
     justify-content: space-between;        
@@ -111,5 +111,5 @@ h3{
     margin-left: 100px;
     margin-bottom: 0px;
     margin-right: 90px;
-    margin-top: 30px;
+    margin-top: 70px;
 }

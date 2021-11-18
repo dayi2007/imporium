@@ -3,7 +3,7 @@
 .sort-container{
 
     font-family: 'Orbitron', sans-serif; 
-    box-shadow: 7px 7px 5px #71339883;  
+    /* box-shadow: 7px 7px 5px #71339883;   */
     color: rgb(255, 255, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
 .sort{

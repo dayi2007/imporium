@@ -7,6 +7,7 @@ import Search from "../../components/Search/Search";
 import "./Gallery.css";
 import { Link } from "react-router-dom";
 import eth from "./eth-logo.png";
+import Logo from "../../components/Logo/Logo";
 
 
 const Gallery = (props) =>{
@@ -68,8 +69,8 @@ const Gallery = (props) =>{
                 <Layout user={props.user}>
                   <div className="search-sort">
                     <Sort className="sort" onSubmit={handleSubmit} handleSort={handleSort}/> 
-                    <Search className="search" onSubmit={handleSubmit} handleSearch={handleSearch}/>                
-                    </div>
+                    <Search className="search" onSubmit={handleSubmit} handleSearch={handleSearch}/>           
+                  </div>
                   <div className="gallery">
                     <div className="cards">
                         {searchResult?.map((card) =>(                                       
@@ -96,6 +97,7 @@ const Gallery = (props) =>{
                     </div> 
                   </div>       
               </Layout>
+              {/* <Logo /> */}
             </div>
     )
 }
