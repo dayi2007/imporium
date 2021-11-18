@@ -314,10 +314,9 @@ waitForImages();
         <div className="infoList">
             <div className="info__wrapper">
             <div className="info current--info">
-            <h1 className="text-name">Polygon Vault</h1>
+                <h1 className="text-name">Polygon Vault</h1>
                 <h4 className="text-location">40577C</h4>
                 <p className="home-text-description">Let your dreams come true</p>
-            
             </div>
             <div className="info next--info">
                 <h1 className="text-name">OnChain Seaside</h1>
@@ -326,7 +325,7 @@ FA7E6D</h4>
                 <p className="home-text-description">Adventure is never far away</p>
             </div>
             <div className="info previous--info">
-            <h1 className="text-name">Escapism</h1>
+                <h1 className="text-name">Escapism</h1>
                 <h4 className="text-location">greekdx</h4>
                 <p className="home-text-description">Blur the boundary between fantasy and reality</p>
             </div>
