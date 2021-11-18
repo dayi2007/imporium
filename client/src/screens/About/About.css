@@ -30,8 +30,6 @@ main{
   background-color: white;
   opacity: 0.5;
   border: 5px black;
-  border-radius: 10px;
-  justify-content: right;
   align-content: center;
 }
 
@@ -41,8 +39,6 @@ main{
   opacity: 1;
   border: 5px black;
   border-radius: 10px;
-  justify-content: right;
-  align-content: center;
   transition: 0.2s ease-in-out;
   transform: scale(1.05);
 }
@@ -50,4 +46,13 @@ main{
 img {
   width: 50px;
   height: 50px;
+}
+
+.img {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-template-columns: 60px;
+  grid-template-rows: 60px 60px;
+  background-color: aqua;
 }
