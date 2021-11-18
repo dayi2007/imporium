@@ -1,0 +1,33 @@
+/* imporium */
+.home {
+width: 100%;
+height: 100vh;
+max-height: 1000px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-size:100vw;
+
+backdrop-filter: blur(5px);
+}
+
+.newhome {
+    margin-top: 50px;
+    width: 100%;
+height: 100vh;
+max-height: 1000px;
+display: flex;
+justify-content: center;
+align-items: center;
+    background-repeat: no-repeat;
+    background-size:100vw;
+background-position-x: center;
+background-position-y:center;
+/*
+background-image: url(https://lh3.googleusercontent.com/W6-gBHp_Kiu5sO75MvMUBE6GZY6JK5PWWXZPhdFFsL37A-99uJpCMxG8z3EDfGobANSdmQXDk5J0G88nSG2LCs8DX5XxVXiDjEKA5Q=w286); */
+}
+
+.more {
+    display: block;
+}
