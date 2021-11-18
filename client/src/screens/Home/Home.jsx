@@ -3,7 +3,7 @@ import './Home.css'
 import Layout from '../../components/Layout/Layout'
 import Carousel from '../../components/Carousel/Carousel'
 import LandingPage from '../../components/LandingPage-1/LandingPage-1'
-import LandingPageTwo from '../../components/LandingPage-2/LandingPage-2'
+import RevolveCarousel from '../../components/RevolveCarousel/RevolveCarousel'
 const Home = (props) => {
 
     const bossbeauties = [
@@ -44,9 +44,9 @@ return (
         </div>
 
         <LandingPage />
-            <LandingPageTwo images={bossbeauties} collectionName={"Boss Beauties"}/>
-            <LandingPageTwo images={coolcats} collectionName={"Cool Cats"}/>
-            <LandingPageTwo images={mandelbrot} collectionName={"Mandebrot"}/>
+            <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
+            <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
+            <RevolveCarousel images={mandelbrot} collectionName={"Mandebrot"}/>
         </Layout>
     </div>
 
