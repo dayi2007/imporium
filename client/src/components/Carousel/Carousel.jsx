@@ -68,7 +68,6 @@ function swapCards(direction) {
 			nextBgImageEl.classList.add("current--image");
             
             document.getElementsByClassName('newhome')[0].style.backgroundImage = `url(${nextBgImageEl.getElementsByTagName("img")[0].src})`;
-            console.log(nextBgImageEl.getElementsByTagName("img")[0].src)
 		} else if (direction === "left") {
 			previousCardEl.style.zIndex = "30";
 			nextCardEl.style.zIndex = "20";
@@ -83,7 +82,6 @@ function swapCards(direction) {
 			previousBgImageEl.classList.add("current--image");
 			nextBgImageEl.classList.add("previous--image");
             document.getElementsByClassName('newhome')[0].style.backgroundImage = `url(${previousBgImageEl.getElementsByTagName("img")[0].src})`;
-            console.log(previousBgImageEl.getElementsByTagName("img")[0].src)
 		}
 	}
 }
@@ -316,10 +314,9 @@ waitForImages();
         <div className="infoList">
             <div className="info__wrapper">
             <div className="info current--info">
-            <h1 className="text-name">Polygon Vault</h1>
+                <h1 className="text-name">Polygon Vault</h1>
                 <h4 className="text-location">40577C</h4>
                 <p className="home-text-description">Let your dreams come true</p>
-            
             </div>
             <div className="info next--info">
                 <h1 className="text-name">OnChain Seaside</h1>
@@ -328,7 +325,7 @@ FA7E6D</h4>
                 <p className="home-text-description">Adventure is never far away</p>
             </div>
             <div className="info previous--info">
-            <h1 className="text-name">Escapism</h1>
+                <h1 className="text-name">Escapism</h1>
                 <h4 className="text-location">greekdx</h4>
                 <p className="home-text-description">Blur the boundary between fantasy and reality</p>
             </div>
