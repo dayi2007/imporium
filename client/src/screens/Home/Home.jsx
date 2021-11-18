@@ -42,7 +42,6 @@ return (
                 <Carousel />
             </div>
         </div>
-
         <LandingPage />
             <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
             <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
