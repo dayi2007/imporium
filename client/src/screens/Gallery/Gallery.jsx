@@ -97,7 +97,6 @@ const Gallery = (props) =>{
                     </div> 
                   </div>       
               </Layout>
-              {/* <Logo /> */}
             </div>
     )
 }
