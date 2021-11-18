@@ -7,7 +7,7 @@ import Search from "../../components/Search/Search";
 import "./Gallery.css";
 import { Link } from "react-router-dom";
 import eth from "./eth-logo.png";
-import Logo from "../../components/Logo/Logo";
+
 
 
 const Gallery = (props) =>{

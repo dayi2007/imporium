@@ -239,19 +239,30 @@
 @media only screen and (max-width: 600px) {
   .preview-image {
     max-height: 400px;
-    max-width: 400px;
+    max-width: 370px;
     margin-top: 15%;
   }
 
   .form-edit {
-    max-width: 400px;
+    max-width: 370px;
   }
 
   .drop-3 {
     display: none;
   }
   
+  .drop-4 {
+    display: none;
+  }
+
   .drop-2 {
-    bottom: -60px;
+    display: none;
+  }
+  .drop-5 {
+    display: none;
+  }
+
+  .drop-1 {
+    display: none;
   }
 }

@@ -38,7 +38,7 @@ const Nav = ({ user }) => {
       <div className="nav">
         <NavLink className="logo" to="/">
           {/* Imporium */}
-          <img src={logo} className="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </NavLink>
         <div className="link-wrapper">
           <div className="links">
