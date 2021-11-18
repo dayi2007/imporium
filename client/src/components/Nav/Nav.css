@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
 
-nav {
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   background-color:black;
   width: 100vw;
-  height: 50px;
+  height: 60px;
   position: fixed;
   z-index: 20;
   top:0;
@@ -15,25 +18,40 @@ nav {
   letter-spacing: 1px;
   color: white;
   text-decoration: none;
-  display: flex;
-  float: right;
-  justify-content: space-evenly;
-  line-height: -5vh;
-  margin-left: 5px;
-  margin-right: 10px;
-  margin-top: -16px;
+  display: inline-block;
+  /* flex-wrap: nowrap; */
+  /* justify-content: space-evenly; */
+  padding-right: 4vw;
+  padding-top: 2vh;
 }
+
 .logo {
-  font-family: 'Orbitron', sans-serif;
-  /* font-size: 24px; */
-  color: white;
-  font-weight: 900;
-  text-decoration: none;
-  display: flex;
-  margin-left: 5rem;
-  letter-spacing: 3px;
-  padding-top: 18px;
+  font-size: 38px;
+  margin-left: 3rem;
+  width: 200px;
+  height: 50px;
 }
-.link-welcome{
-  color: white;
+.link-wrapper {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  flex-wrap: nowrap !important;
+  flex-shrink: 1;
+  max-height: 60px;
+  right: 0;
+  white-space: nowrap;
+}
+.links {
+  flex-wrap: nowrap;
+  position: absolute;
+  padding-left: 32vw;
+  max-height: 60px;
+  flex-shrink: 1;
+  /* align-content: flex-end; */
+  /* margin-right: 0; */
+  /* order: -1; */
+}
+@media only screen and (max-width: 1290px) {
+.links {
+  padding-left: 10vw
+}
 }
