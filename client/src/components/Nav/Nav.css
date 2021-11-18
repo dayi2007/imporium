@@ -2,7 +2,11 @@
 
 nav {
   background-color:black;
+  width: 100vw;
   height: 50px;
+  position: fixed;
+  z-index: 20;
+  top:0;
 }
 .link {
   font-family: 'Orbitron', sans-serif;
