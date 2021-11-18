@@ -1,8 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import './Carousel.css'
 import {gsap} from "gsap";
 import imagesLoaded from "imagesloaded";
 
+gsap.config({
+    nullTargetWarn: false,
+  });
 
 const Carousel = () => {
 
@@ -252,7 +255,7 @@ const waitForImages = () => {
 					backgroundColor: `hsl(${loadProgress * 120}, 100%, 50%`,
 				});
 
-				if (totalImages == loadedImages) {
+				if (totalImages === loadedImages) {
 					gsap.timeline()
 						.to(".loading__wrapper", {
 						duration: 0.8,
@@ -357,10 +360,6 @@ FA7E6D</h4>
             <polyline points="184 112 328 256 184 400" style={{fill: 'none', stroke: '#fff', strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '48px'}} />
         </symbol>
         </svg>
-        <div className="support">
-        <a href="https://twitter.com/DevLoop01" target="_blank"><i className="fab fa-twitter-square" /></a>
-        <a href="https://dribbble.com/devloop01" target="_blank"><i className="fab fa-dribbble" /></a>
-        </div>
         </div>
     )
 }
