@@ -96,7 +96,7 @@ const SignUp = (props) => {
         />
         <label>Password Confirmation</label>
         <input
-          id="password"
+          id="password1"
           required
           name='passwordConfirmation'
           value={passwordConfirmation}
