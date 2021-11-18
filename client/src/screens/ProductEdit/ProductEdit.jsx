@@ -61,7 +61,7 @@ const ProductEdit = (props) => {
       <div className="edit-page">
         
         <section className="preview-card">
-          <img className="preview-image" src={product.image} />
+          <img className="preview-image" src={product.image} alt={product.title}/>
           <h2 className="preview-title">{product.title}</h2>
           <h3 className="preview-creator">{product.creator}</h3>
         </section> 
