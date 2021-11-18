@@ -204,3 +204,22 @@ button:focus {
   outline: none;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .dropy-5 {
+    display: none;
+  }
+
+  .dropy-2 {
+    display: none;
+  }
+  
+  .dropy-3 {
+    display: none;
+  }
+
+  .create-form {
+    width: 350px;
+  }
+}
+
