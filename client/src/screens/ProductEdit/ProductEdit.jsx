@@ -173,8 +173,8 @@ const ProductEdit = (props) => {
     <div className="dropx drop-1"></div>
     <div className="dropx drop-2"></div>
     <div className="dropx drop-3"></div>
-    <div classN="dropx drop-4"></div>
-    <div class="dropx drop-5"></div>
+    <div className="dropx drop-4"></div>
+    <div className="dropx drop-5"></div>
   </div>
           </form>
       </section>
