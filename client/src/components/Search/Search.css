@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
 
-.search-form{
+.search-form ::placeholder{
 
     font-family: 'Orbitron', sans-serif;
     color: rgb(255, 255, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
-    box-shadow: 7px 7px 5px #71339883;      
+    /* box-shadow: 7px 7px 5px #71339883;       */
 }
-.search-input{
+.search-input {
 
     font-family: 'Orbitron', sans-serif; 
     width: 173px;
@@ -17,4 +17,3 @@
     color: rgb(255, 255, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
