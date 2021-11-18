@@ -76,7 +76,7 @@
     border: none;
     border-left: 1px solid white;
     border-top: 1px solid white;
-    border-radius: 5px;
+    border-radius: 16px;
     border:solid 2px rgba(74, 62, 179, 0.817);
     backdrop-filter: blur(4px);
     box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
@@ -219,7 +219,22 @@ button:focus {
   }
 
   .create-form {
-    width: 350px;
+    width: 340px;
+  }
+  .create-container h2{
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .create-form input{
+    width: 250px;
+  }
+  .textarea-create-form{
+    width: 250px;
   }
 }
 
