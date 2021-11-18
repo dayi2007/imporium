@@ -7,7 +7,7 @@ import Search from "../../components/Search/Search";
 import "./Gallery.css";
 import { Link } from "react-router-dom";
 import eth from "./eth-logo.png";
-import Logo from "../../components/Logo/Logo";
+
 
 
 const Gallery = (props) =>{
@@ -74,7 +74,7 @@ const Gallery = (props) =>{
                   <div className="gallery">
                     <div className="cards">
                         {searchResult?.map((card) =>(                                       
-                                <div className="card-div" key={card.id}>
+                                <div className="card-div" key={card._id}>
                                     <Link to={`/gallery/${card._id}`} > 
                                       <img className="image" src={card.image} alt={card.title}/> 
                                       <div className="hover-cards">
@@ -97,7 +97,6 @@ const Gallery = (props) =>{
                     </div> 
                   </div>       
               </Layout>
-              {/* <Logo /> */}
             </div>
     )
 }

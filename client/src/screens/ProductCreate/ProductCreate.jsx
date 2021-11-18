@@ -42,11 +42,11 @@ const ProductCreate = (props) => {
     <div>
       <Layout user={props.user}>
         <div className="create-container">
-          <h2>Upload NFT</h2>
+          <h2>Ready to sell? Upload your NFT!</h2>
           <form className="create-form" onSubmit={handleSubmit}>
             <input
               className="input-create-form"
-              className="input-title"
+              // className="input-title"
               id="input"
               placeholder="Title"
               value={product.title}
@@ -57,7 +57,7 @@ const ProductCreate = (props) => {
             />
             <input
               className="input-create-form"
-              className="input-creator"
+              // className="input-creator"
               id="input"
               placeholder="Creator"
               value={product.creator}
@@ -68,7 +68,7 @@ const ProductCreate = (props) => {
             />
             <input
               className="input-create-form"
-              className="input-image-link"
+              // className="input-image-link"
               id="input"
               placeholder="Image Link"
               value={product.image}
@@ -91,7 +91,7 @@ const ProductCreate = (props) => {
             />
             <input
               className="input-create-form"
-              className="input-price"
+              // className="input-price"
               id="input"
               placeholder="Price"
               value={product.price}
@@ -102,7 +102,7 @@ const ProductCreate = (props) => {
             />
             <input
               className="input-create-form"
-              className="input-copies"
+              // className="input-copies"
               id="input"
               placeholder="Copies Sold"
               value={product.copies}
@@ -113,7 +113,7 @@ const ProductCreate = (props) => {
             />
             <input
               className="input-create-form"
-              className="input-lowest"
+              // className="input-lowest"
               id="input"
               placeholder="Lowest Price"
               value={product.lowest}
@@ -124,7 +124,7 @@ const ProductCreate = (props) => {
             />
             <input
               className="input-create-form"
-              className="input-highest"
+              // className="input-highest"
               id="input"
               placeholder="Highest Price"
               value={product.highest}
@@ -134,14 +134,14 @@ const ProductCreate = (props) => {
               onChange={handleChange}
             />
             <button type="submit" className="submit-button">
-              Upload
+              upload
             </button>
-            <div class="create-drops">
-              <div class="dropy dropy-1"></div>
-              <div class="dropy dropy-2"></div>
-              <div class="dropy dropy-3"></div>
-              <div class="dropy dropy-4"></div>
-              <div class="dropy dropy-5"></div>
+            <div className="create-drops">
+              <div className="dropy dropy-1"></div>
+              <div className="dropy dropy-2"></div>
+              <div className="dropy dropy-3"></div>
+              <div className="dropy dropy-4"></div>
+              <div className="dropy dropy-5"></div>
             </div>
           </form>
         </div>
