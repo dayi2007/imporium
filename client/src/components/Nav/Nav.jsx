@@ -1,5 +1,6 @@
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
+import logo from "./logo-smaller.png";
 
 const authenticatedOptions = (
   <>
@@ -36,12 +37,17 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav">
         <NavLink className="logo" to="/">
-          Imporium
+          {/* Imporium */}
+          <img src={logo} className="logo" />
         </NavLink>
-        <div className="links">
-          {user && <div className="link welcome">Welcome, {user.username}</div>}
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
+        <div className="link-wrapper">
+          <div className="links">
+            {user && (
+              <div className="link">Welcome, {user.username}</div>
+            )}
+            {alwaysOptions}
+            {user ? authenticatedOptions : unauthenticatedOptions}
+          </div>
         </div>
       </div>
     </nav>

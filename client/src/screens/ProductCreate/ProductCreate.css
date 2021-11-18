@@ -3,132 +3,48 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .create-container h2 {
+
+
+.create-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-.create-form {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 60%;
-  justify-content: space-evenly;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: rgba(255, 255, 255, 0);
-  opacity: 0.55;
-  
-
-}
-input:focus, textarea:focus, select:focus {
-  outline: none;
-}
-
-input, textarea {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-}
-.input-title {
-  font-size: 34px;
-  padding-top: 15px;
-  padding-left: 10px;
-}
-.input-creator {
-  font-size: 26px;
-  padding-left: 10px;
-}
-.input-image-link {
-  font-size: 26px;
-  padding-left: 10px;
-}
-.textarea-description {
-  font-size: 26px;
-  padding-left: 10px;
-}
-.input-price {
-  font-size: 26px;
-  padding-left: 10px;
-}
-.input-copies {
-  font-size: 26px;
-  padding-left: 10px;
-}
-.input-lowest {
-  font-size: 26px;
-  padding-left: 10px;
-}
-.input-highest {
-  font-size: 26px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-.submit-button {
-  height: 30px;
-  font-size: 20px;
-  color: white; 
-} */
-.container {
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 50%;
-  left: 50%;
-}
-
-.create-form {
-  background: rgba(73, 62, 179, 0.904);
+  background: rgba(67, 56, 159, 0.297);
   padding: 3em;
   height: fit content;
   width: 500px;
   border-radius: 20px;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
+  border: 1px solid white;
   backdrop-filter: blur(10px);
   box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
   text-align: center;
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
   transition: all 0.2s ease-in-out;
 }
 .create-form input{
   margin: 2%;
   width: 350px;
   justify-content: center;
-  opacity: 0.9;
+  opacity: 0.8;
   background-color: rgb(255, 255, 255);
   color: black;
   text-align: center;
-  border:solid 2px rgba(73, 62, 179, 0.904);
+  border:solid 2px rgba(74, 62, 179, 0.817);
   border-radius: 16px;
   height: 50px;
 }
   .create-container h2 {
     font-weight: 500;
-    color: #fff;
+    color: black;
     opacity: 0.7;
     font-size: 1.4rem;
-    margin-top: 0;
+    margin-top: 10%;
     margin-bottom: 60px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-  }
-  
-  /* a {
-    text-decoration: none;
-    color: #ddd;
-    font-size: 12px;
-    
-    &:hover {
-      text-shadow: 2px 2px 6px #00000040;
-    }
-    
-    &:active {
-      text-shadow: none;
-    }
-  } */
+  } 
   
   .input-create-form {
     background: transparent;
@@ -141,19 +57,37 @@ input, textarea {
     border-radius: 5000px;
     backdrop-filter: blur(5px);
     box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
-    color: #fff;
+    color: black;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   }
+  .textarea-create-form {
+    width: 345px;
+    opacity: 0.8;
+    padding: 2em;
+    margin-top: 0.7rem;
+    margin-bottom: 0.9em;
+    border: none;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: black;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2)
+  }
     .input-create-form:hover {
-      background: rgba(255,255,255,0.1);
+      background: rgba(255,255,255);
       box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
     }
     
       .input-create-form:focus {
-        background: rgba(255,255,255,0.1);
+        background: rgba(255,255,255);
         box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
       }
     
@@ -176,10 +110,10 @@ input, textarea {
   }
 
 
-::placeholder {
+#input::placeholder {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-  color: #fff;
+  color: black;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 
@@ -194,7 +128,7 @@ input, textarea {
   transition: all 0.2s ease;
 }
 .dropy {
-  background: rgba(116, 44, 175, 0.493);
+  background: rgba(98, 3, 193, 0.29);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   border-left: 1px solid white;
@@ -206,38 +140,38 @@ input, textarea {
   .dropy-1 {
     height: 80px;
     width: 80px;
-    top: -20px;
-    left: -40px;
+    top: 305px;
+    left: -390px;
     z-index: -1;
   }
   
   .dropy-2 {
     height: 80px;
     width: 80px;
-    bottom: -30px;
-    right: -10px;
+    bottom: 300px;
+    right: -400px;
   }
   
   .dropy-3 {
     height: 100px;
     width: 100px;
-    bottom: 120px;
-    right: -50px;
+    bottom: 330px;
+    right: -450px;
     z-index: -1;
   }
   
   .dropy-4 {
     height: 120px;
     width: 120px;
-    top: -60px;
-    right: -60px;
+    top: 325px;
+    left: -440px;
   }
   
   .dropy-5 {
     height: 60px;
     width: 60px;
-    bottom: 170px;
-    left: 90px;
+    bottom: 290px;
+    left: 390px;
     z-index: -1;
   }
 
@@ -248,4 +182,20 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+.submit-button {
+  width: 50%;
+  background: white;
+  opacity: 0.8;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 14px;
+  font-size: 0.9rem;
+  margin-bottom: -1.5rem;
+  margin-top: 1.0rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #020202;
+  outline: none;
+  cursor: pointer;
 }
