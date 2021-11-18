@@ -74,7 +74,7 @@ const Gallery = (props) =>{
                   <div className="gallery">
                     <div className="cards">
                         {searchResult?.map((card) =>(                                       
-                                <div className="card-div" key={card.id}>
+                                <div className="card-div" key={card._id}>
                                     <Link to={`/gallery/${card._id}`} > 
                                       <img className="image" src={card.image} alt={card.title}/> 
                                       <div className="hover-cards">
