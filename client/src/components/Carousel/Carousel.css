@@ -278,16 +278,28 @@ background: red;
 transform: scaleX(0);
 transform-origin: left;
 }
-
-@media only screen and (min-width: 300px) {
-
+.home-text-description {
+    text-align: left !important;
+}
+@media only screen and (min-width: 680px) {
+    .loading__wrapper {
+        display:none;
+    }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 680px) {
 :root {
-    --card-width: 250px;
-    --card-height: 400px;
+    --card-width: 110px;
+    --card-height: 170px;
 }
+.text-name {
+    font-size: 1.3em;
+}
+.text-location {
+    font-size: .7rem;
+}
+
+
 }
 .support {
 position: absolute;

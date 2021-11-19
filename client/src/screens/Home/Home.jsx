@@ -35,14 +35,16 @@ const Home = (props) => {
         "https://lh3.googleusercontent.com/iTU0udQtxQ5k_s1zTy4CoIlFPWy0SKiu3Z9CJhoxbiluYPq7Mh_Kjxa7Q-0YY6cwiJ4YpJVCU0VHBSG37BvkDDQ28HYRXHcN0t4tdQ=w600"]
     
 return (
-    <div>
+    <div className="home-div">
         <Layout >
         <div className="newhome">
             <div className='home'>
                 <Carousel />
             </div>
         </div>
+            <div>
             <LandingPage />
+            </div>
             <div className="revolving-carousels">
                 <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
                 <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
