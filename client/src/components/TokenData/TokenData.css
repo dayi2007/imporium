@@ -58,7 +58,8 @@
   font-size: 20px;
   text-align: left !important;
   padding-left: 20px;
-  filter: drop-shadow(0 0 0.95rem rgba(220, 20, 60, 0.541));
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  filter: drop-shadow(0 0 0.95rem #723398);
   margin-bottom: 5%;
 }
 
@@ -183,10 +184,9 @@ text-shadow: 1px -1px 1px rgba(143, 162, 199, 0.75),
   }
 
   .token-footer {
-    background: rgba(255, 255, 255, 0.22);
     box-shadow: 10px 14px 14px rgba(0, 0, 0, 0.55);
     margin-top: 10%;
-    background-color: #723398;
+    background: rgba(238, 229, 229, 0.835);
     border-radius: 0px 0px 16px 16px;
     padding-top: 20px;
   }

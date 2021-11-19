@@ -5,8 +5,6 @@ import logo from "./logo-smaller.png";
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 import BurgerMenu from '../../components/BurgerMenu/BurgerMenu.jsx';
-
-
 const authenticatedOptions = (
   <>
     <NavLink className="link" to="/create-product">
@@ -37,26 +35,20 @@ const alwaysOptions = (
     </NavLink>
   </>
 );
-
-
-
 const Nav = ({ user }) => {
   const [flip, isFlipped] = useState(false);
-
   const toggleBurger = () => {
     isFlipped(!flip);
   }
-
   return (
     <nav>
-
       <div className="nav">
         <div className="burger-wrapper">
           <button className="burger-button" onClick={toggleBurger}>
           {flip ? (
               <MdClose style={{ color: "#fff", width: "40px", height: "40px" }}
               />) :
-              (<FiMenu style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />)}
+              (<FiMenu style={{ color: "#7B7B7B", width: "40px", height: "40px" }} />)}
             {flip ? <BurgerMenu user={user}/> : null}
           </button>
       </div>
