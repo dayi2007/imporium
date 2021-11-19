@@ -32,6 +32,18 @@
     background: cover;
 
 }
+.landing-page-3 {
+    height: 500px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255,.1);
+    background: cover;
+
+}
 .ruler {
     border-color: rgba(255,255,255,.3);
 }
@@ -40,9 +52,6 @@
     text-align: center;
     width: 30vw;
     margin: auto auto;
-    padding: 45px;
-    transform: skewY(-4deg);
-    transform-origin: bottom left;
     padding: 15px 0 15px 0 ;
 }
 .info-nft {
@@ -51,27 +60,18 @@
     width: 30vw;
     margin: auto auto;
     padding-top: 3.3vh;
+    z-index: 10;
 }
 .imporium-paragraph {
     font-size: 1rem;
     line-height: 1.5rem;
-    /*text-shadow: -2.4px -2.4px 0 rgba(0, 0, 0, 0.548), 1px -1px 0 #000, -1px 5px 0 #000, 1px 1px 0 #000; */
     transform:  skewY(-4deg);
     transform-origin: bottom left;
-
-    animation: gra 5s infinite;
-    animation-direction: reverse;
-    -webkit-animation: gra 5s infinite;
-    -webkit-animation-direction: reverse;
-    animation-timing-function: linear;
-    -webkit-animation-timing-function: linear;
-
 }
 
 .nft-paragraph {
     font-size: 1rem;
     line-height: 1.5rem;
-
 
     transform: skewY(4deg);
     transform-origin: bottom right;
@@ -89,4 +89,121 @@
 
     transform: skewY(4deg);
     transform-origin: bottom right;
+}
+.imporium-demo-img {
+    width:350px;
+    height:350px;
+    margin: auto auto;
+    transform-style: preserve-3d;
+    animation: imporium-demo 30s linear infinite;
+}
+.imporium-demo-box {
+    display:flex;
+    justify-content: center;
+    margin:auto auto;
+}
+
+.nft-demo-img {
+    width:350px;
+    height:350px;
+    margin: auto auto;
+    transform-style: preserve-3d;
+    animation: nft-demo 30s linear infinite;
+}
+.nft-demo-box {
+    display:flex;
+    justify-content: center;
+    margin:auto auto;
+}
+@keyframes nft-demo {
+    0% {
+    transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+    transform: perspective(1000px) rotateY(360deg);
+    }
+}
+@keyframes imporium-demo {
+    0% {
+    transform: perspective(1000px) rotateY(0deg) rotate(0deg);;
+    }
+    100% {
+    transform: perspective(1000px) rotateY(360deg) rotate(360deg);;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .landing-page-2 {
+        display:block;
+    }
+    .landing-page-3 {
+        display:block;
+    }
+    .nft-demo-box {
+        display:flex;
+        justify-content: center;
+    }
+    .nft-demo-img {
+    width:200px;
+    height:200px;
+    margin: auto auto;
+    transform-style: preserve-3d;
+    animation: nft-demo 30s linear infinite;
+    }
+
+    .imporium-demo-box {
+        display:flex;
+        justify-content: center;
+    }
+    .imporium-demo-img {
+    width:200px;
+    height:200px;
+    margin: auto auto;
+    transform-style: preserve-3d;
+    animation: imporium-demo 30s linear infinite;
+    }
+    .info-imporium {
+        display: block;
+        text-align: center;
+        width: 50vw;
+        margin: auto auto;
+        padding: 45px;
+        padding: 15px 0 15px 0 ;
+    }
+    .info-nft {
+        display: block;
+        text-align: center;
+        width: 50vw;
+        margin: auto auto;
+        padding-top: 3.3vh;
+    }
+    .imporium-paragraph {
+        font-size: .5rem;
+        line-height: 1.5rem;
+
+        transform:  skewY(0deg);
+    }
+    
+    .nft-paragraph {
+        font-size: .5rem;
+        line-height: 1.5rem;
+
+    
+        transform: skewY(0deg);
+
+    }
+    .what-is-imporium {
+        margin-bottom: 10px;
+        font-size: 1rem;
+
+        transform: skewY(0deg);
+
+    }
+    .what-is-nft {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    
+        transform: skewY(0deg);
+
+    }
 }
