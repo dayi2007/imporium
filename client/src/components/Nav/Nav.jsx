@@ -53,18 +53,16 @@ const Nav = ({ user }) => {
           </button>
       </div>
         <NavLink className="logo" to="/">
-          {/* Imporium */}
           <img src={logo} alt="logo" className="logo" />
         </NavLink>
         <div className="link-wrapper">
           <div className="links">
-            {user && (
-              <div className="link">Welcome, {user.username}</div>
-            )}
+            {user && <div className="link">Welcome, {user.username}</div>}
             {alwaysOptions}
             {user ? authenticatedOptions : unauthenticatedOptions}
           </div>
         </div>
+        
       </div>
     </nav>
   );
