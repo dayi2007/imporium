@@ -15,8 +15,8 @@ const Carousel = () => {
 //const { gsap, imagesLoaded } = window;
 
 const buttons = {
-	prev: document.querySelector(".btn--left"),
-	next: document.querySelector(".btn--right"),
+	prev: document.querySelector(".btn--right"),
+	next: document.querySelector(".btn--left"),
 };
 const cardsContainerEl = document.querySelector(".cards__wrapper");
 const appBgContainerEl = document.querySelector(".app__bg");
@@ -303,6 +303,7 @@ waitForImages();
                 </div>
             </div>
             </div>
+			
             <button className="cardList__btn btn btn--right">
             <div className="icon">
                 <svg>
