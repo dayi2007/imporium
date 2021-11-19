@@ -95,7 +95,7 @@
     height:350px;
     margin: auto auto;
     transform-style: preserve-3d;
-    animation: imporium-demo .001s linear infinite;
+    animation: imporium-demo 30s linear infinite;
 }
 .imporium-demo-box {
     display:flex;
@@ -108,7 +108,7 @@
     height:350px;
     margin: auto auto;
     transform-style: preserve-3d;
-    animation: nft-demo .001s linear infinite;
+    animation: nft-demo 30s linear infinite;
 }
 .nft-demo-box {
     display:flex;

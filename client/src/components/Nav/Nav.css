@@ -61,17 +61,12 @@
   padding-left: 10vw
   }
 }
-<<<<<<< HEAD
 @media only screen and (max-width: 1036px) {
 .links {
   padding-left: 5vw
   }
 }
-
-@media only screen and (max-width: 860px) {
-=======
 @media only screen and (max-width: 680px) {
->>>>>>> d42ad065cfe1f4d597f0678c5ba7ccbe071e0e4e
   .links {
     display: none;
   }
