@@ -36,7 +36,7 @@ const Home = (props) => {
     
 return (
     <div>
-        <Layout >
+        <Layout user={props.user}>
         <div className="newhome">
             <div className='home'>
                 <Carousel />
