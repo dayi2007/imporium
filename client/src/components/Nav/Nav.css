@@ -23,6 +23,11 @@
   /* justify-content: space-evenly; */
   padding-right: 4vw;
   padding-top: 2vh;
+  letter-spacing: 4px;
+  -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(0deg,rgb(161, 56, 139), rgb(93, 21, 172));
+    background-clip: text;
+
 }
 
 .logo {

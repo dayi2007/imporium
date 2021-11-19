@@ -10,7 +10,7 @@ body {
 }
 
 .form-container {
-  background-image: linear-gradient(#B760E0, #60E084);
+  /* background-image: linear-gradient(#B760E0, #60E084); */
   width: 400px;
   height: 600px;
   position: absolute;
@@ -61,6 +61,7 @@ body {
 }
 #username{
   padding-bottom: 2vh;
+  letter-spacing: 0.7vh;
 }
 #email, 
 #email::placeholder {
@@ -75,6 +76,7 @@ body {
 }
 #email{
   padding-bottom: 2vh;
+  letter-spacing: 0.7vh;
 }
 #password, 
 #password::placeholder {
@@ -89,6 +91,7 @@ body {
 }
 #password{
   padding-bottom: 2vh;
+  letter-spacing: 0.7vh;
 }
 #password1, 
 #password1::placeholder {
@@ -103,12 +106,13 @@ body {
 }
 #password1{
   padding-bottom: 5vh;
+  letter-spacing: 0.7vh;
 
 }
 
 #button {
   width: 100%;
-  background: white;
+  background: rgba(255, 255, 255, 0.39);
   border: none;
   border-radius: 30px;
   padding: 14px 14px;
@@ -116,7 +120,7 @@ body {
   margin-bottom: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #0145ff;
+  color: #ffffff;
   outline: none;
   cursor: pointer;
 }
