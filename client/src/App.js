@@ -12,7 +12,7 @@ import SignOut from "./screens/SignOut/SignOut";
 import SignUp from "./screens/SignUp/SignUp";
 import { verifyUser } from "./services/users";
 import './'
-
+import Layout from "./components/Layout/Layout"
 const App = () => {
   const [user, setUser] = useState(null);
 
@@ -26,6 +26,7 @@ const App = () => {
 
   return (
     <div className="App">
+
       <Routes>
         <Route exact path="/" element={<Home user={user} />} />
         <Route path="/sign-up" element={<SignUp setUser={setUser} /> } />
@@ -48,7 +49,7 @@ const App = () => {
           }
         />
         <Route exact path="/gallery/:id" element={<ProductDetail user={user} />} />
-        <Route exact path="/about" element={<About setUser={setUser} />}/>
+        <Route exact path="/about" element={<About user={user} />}/>
       </Routes>
     </div>
   );

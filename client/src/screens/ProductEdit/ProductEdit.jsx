@@ -72,6 +72,7 @@ const ProductEdit = (props) => {
             <input
               className="for-inputs"
               className="input-title"
+              id="hoverplz"
               placeholder="Title"
               value={product.title}
               name='title'
@@ -82,7 +83,8 @@ const ProductEdit = (props) => {
           <h4 className="sub-headers">Creator</h4>
             <input
             className="for-inputs"
-            className="input-creator"
+              className="input-creator"
+              id="hoverplz"
             placeholder="Creator"
             value={product.creator}
             name='creator'
@@ -93,7 +95,8 @@ const ProductEdit = (props) => {
           <h4 className="sub-headers">Image URL</h4>
             <input
             className="for-inputs"
-            className="input-image"
+              className="input-image"
+              id="hoverplz"
             placeholder="Image URL"
             value={product.image}
             name='image'
@@ -104,7 +107,7 @@ const ProductEdit = (props) => {
             <h4 className="sub-headers">Description</h4>
             <br />
             <textarea
-            
+            id="hoverplz"
             className="input-description"
             rows={10}
             cols={78}
@@ -119,7 +122,8 @@ const ProductEdit = (props) => {
           <h4 className="sub-headers">Price</h4>
             <input
               className="for-inputs"
-            className="input-price"
+              className="input-price"
+              id="hoverplz"
             placeholder="Price"
             value={product.price}
             name='price'
@@ -130,7 +134,8 @@ const ProductEdit = (props) => {
           <h4 className="sub-headers">Copies Sold</h4>
             <input
               className="for-inputs"
-            className="input-copies"
+              className="input-copies"
+              id="hoverplz"
             placeholder="Copies"
             value={product.copies}
             name='copies'
@@ -141,7 +146,8 @@ const ProductEdit = (props) => {
           <h4 className="sub-headers">Lowest Price</h4>
             <input
               className="for-inputs"
-            className="input-lowest"
+              className="input-lowest"
+              id="hoverplz"
             placeholder="Lowest Price"
             value={product.lowest}
             name='lowest'
@@ -152,7 +158,8 @@ const ProductEdit = (props) => {
             <h4 className="sub-headers">Highest Price</h4>
             <input
               className="for-inputs"
-            className="input-highest"
+              className="input-highest"
+              id="hoverplz"
             placeholder="Highest Price"
             value={product.highest}
             name='highest'

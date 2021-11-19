@@ -2,20 +2,28 @@
 
 .sort-container{
 
-    font-family: 'Orbitron', sans-serif; 
-    /* box-shadow: 7px 7px 5px #71339883;   */
-    color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.4vh;
+}
 .sort{
 
     font-family: 'Orbitron', sans-serif;  
     height: 28px;  
-    background: rgba(238, 229, 229, 0.596);
-    color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255,.1);
+    color:rgb(255, 255, 255);
+    letter-spacing: 0.4vh;
 }
 .option{
-
-    color: rgb(0, 0, 0);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgb(40 54 82);
+    padding: 2px;
+    letter-spacing: 0.4vh;
+}
+option{
+    padding: 2px;
+    letter-spacing: 0.4vh;
+}
+.sort option{
+    padding: 2px;
+    letter-spacing: 0.4vh;
 }
