@@ -26,28 +26,46 @@ main{
 }
 
 .dev {
-  display: grid;
+  /* display: grid; */
   background-color: white;
   opacity: 0.5;
   border: 5px black;
   border-radius: 10px;
-  justify-content: right;
+  /* justify-content: right; */
   align-content: center;
+  padding-top: 4vh;
+  padding-left: 1.5vh;
 }
 
 .dev:hover {
-  display: grid;
+  /* display: grid; */
   background-color: white;
   opacity: 1;
   border: 5px black;
   border-radius: 10px;
-  justify-content: right;
+  /* justify-content: right; */
   align-content: center;
   transition: 0.2s ease-in-out;
   transform: scale(1.05);
 }
 
 .img-about { 
-  width: 50px;
-  height: 50px;
+  margin-right: 0.8vh;
+  width: 6vh;
+  height: 6vh;
+  float: right;
+}
+
+.dev-name{
+  float: left;
+}
+@media only screen and (max-width: 680px) {
+
+  .cardbox {   
+    width: 45vh;
+    height: 55vh;
+  }
+  .dev-name{
+    font-size: 3vh;
+  }
 }
