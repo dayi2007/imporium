@@ -49,7 +49,7 @@ const App = () => {
           }
         />
         <Route exact path="/gallery/:id" element={<ProductDetail user={user} />} />
-        <Route exact path="/about" element={<About setUser={setUser} />}/>
+        <Route exact path="/about" element={<About user={user} />}/>
       </Routes>
     </div>
   );
