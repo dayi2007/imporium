@@ -11,6 +11,13 @@
   z-index: 20;
   top:0;
 }
+.burger-button {
+  background-color: white;
+  display: none;
+}
+/* .burger-button li {
+
+} */
 .link {
   font-family: 'Orbitron', sans-serif;
   font-size: 14px;
@@ -55,4 +62,18 @@
 .links {
   padding-left: 10vw
 }
+/* .burger-button {
+  display: flex;
+} */
+}
+@media only screen and (max-width: 904px) {
+  .links {
+    display: none;
+  }
+  .burger-button {
+    display: block;
+  }
+  #burger-style + .links {
+    display: block;
+  }
 }

@@ -1,8 +1,8 @@
 import "./Nav.css";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./logo-smaller.png";
-
+import Burger from '../../components/Burger/Burger.jsx';
 
 const authenticatedOptions = (
   <>
@@ -35,30 +35,45 @@ const alwaysOptions = (
   </>
 );
 const Nav = ({ user }) => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  //   const [navbarOpen, setNavbarOpen] = useState(false);
 
-  const handleToggle = () => {
-    setNavbarOpen(!navbarOpen);
-  }
+  // //   const handleToggle = () => {
+  // //     setNavbarOpen(!navbarOpen);
+  // };
   return (
     <nav>
       <div className="nav">
-      <button onClick={handleToggle}>{navbarOpen ? "Close" : "Open"}</button>
         <NavLink className="logo" to="/">
-          {/* Imporium */}
+          {/* <ul></ul> */}
           <img src={logo} alt="logo" className="logo" />
         </NavLink>
+        {/* <button className='burger-button' onClick={handleToggle}>
+            {navbarOpen ? <Burger>Rendering</Burger> : "Open"}
+          </button> */}
         <div className="link-wrapper">
           <div className="links">
-            {user && (
-              <div className="link">Welcome, {user.username}</div>
-            )}
+            {user && <div className="link">Welcome, {user.username}</div>}
             {alwaysOptions}
             {user ? authenticatedOptions : unauthenticatedOptions}
           </div>
         </div>
+        
       </div>
     </nav>
   );
 };
 export default Nav;
+
+/* function toggle_menu(id) {
+  var e = document.getElementById(id);
+  if (e.classList.contains("showing"))
+    e.classList.remove("showing");
+  else
+    e.classList.add("showing");
+} */
+// const classNameZero = () => {
+//   if (balance !== 0) {
+//     className = "balance"
+//   } else { className = "zero" }
+// }
+// <div className={`balance ${balance === 0 ? 'zero' : ''}`}>${balance}</div>
