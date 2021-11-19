@@ -84,7 +84,8 @@
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2)
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
   }
     .input-create-form:hover {
       background: rgba(255,255,255);
@@ -189,20 +190,34 @@ button:focus {
     outline: none;
 }
 .submit-button {
-  width: 50%;
+  width: 200px;
   background: white;
-  opacity: 0.8;
   border: none;
   border-radius: 30px;
   padding: 14px 14px;
   font-size: 0.9rem;
-  margin-bottom: -1.5rem;
-  margin-top: 1.0rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #020202;
+  color: #000000;
   outline: none;
   cursor: pointer;
+}
+.submit-button:hover {
+  width: 200px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 14px 14px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3 ease-in-out; 
 }
 
 @media only screen and (max-width: 600px) {

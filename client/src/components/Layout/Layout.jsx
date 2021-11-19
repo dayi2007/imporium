@@ -9,7 +9,6 @@ const Layout = (props) => (
     <Nav user={props.user} />
     <ParticlesEffect/>
     <div className="layout-children">{props.children}</div>
-    
     <Footer />
   </div>
 );
