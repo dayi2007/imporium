@@ -48,23 +48,23 @@
 }
 
 .form-edit textarea {
-  
-  width: 350px;
+  width: 345px;
+  opacity: 0.8;
+  padding: 2em;
+  margin-top: 0.7rem;
+  margin-bottom: 0.9em;
   border: none;
   border-left: 1px solid white;
   border-top: 1px solid white;
-  border-radius: 5px;
-  backdrop-filter: blur(5px);
-  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
-  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  border:solid 2px rgba(74, 62, 179, 0.817);
+  backdrop-filter: blur(4px);
   box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
   color: black;
-  opacity: 0.9;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2)
 }
 
 .preview-image {
@@ -100,44 +100,42 @@
     border-top: 1px solid white;
     /* border-radius: 5000px; */
     backdrop-filter: blur(5px);
-    /* box-shadow: 4px 4px 60px rgba(0,0,0,0.2); */
     color: black;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
-    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.2); */
   }
-  .for-inputs:hover {
+  #hoverplz:hover {
       background: rgb(255, 255, 255);
       box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
     }
       
-    .for-inputs:focus {
+    #hoverplz:focus {
         background: rgb(255, 255, 255);
         box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
       }
   
     
-      .for-inputs[type="button"] {
+      #hoverplz[type="button"] {
       margin-top: 10px;
       width: 150px;
       font-size: 1rem;
     }
-    .for-inputs:hover {
+    #hoverplz:hover {
         cursor: pointer;
       }
       
-      .for-inputs:active {
+      #hoverplz:active {
         background: rgba(255,255,255,0.2);
       }
   
   
-      .for-inputs:hover {
+      #hoverplz:hover {
     margin: 4px;
   }
 
 
-::placeholder {
+.for-inputs::placeholder {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   color: black;
@@ -282,5 +280,9 @@ button:focus {
 
   .drop-1 {
     display: none;
+  }
+
+  .delete-button, .save-button {
+    width: 100px;
   }
 }
