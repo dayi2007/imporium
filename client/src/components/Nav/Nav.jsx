@@ -1,5 +1,4 @@
 import "./Nav.css";
-// import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useState } from 'react';
 import logo from "./logo-smaller.png";
@@ -62,12 +61,8 @@ const Nav = ({ user }) => {
           </button>
       </div>
         <NavLink className="logo" to="/">
-          {/* <ul></ul> */}
           <img src={logo} alt="logo" className="logo" />
         </NavLink>
-        {/* <button className='burger-button' onClick={handleToggle}>
-            {navbarOpen ? <Burger>Rendering</Burger> : "Open"}
-          </button> */}
         <div className="link-wrapper">
           <div className="links">
             {user && <div className="link">Welcome, {user.username}</div>}
@@ -81,17 +76,3 @@ const Nav = ({ user }) => {
   );
 };
 export default Nav;
-
-/* function toggle_menu(id) {
-  var e = document.getElementById(id);
-  if (e.classList.contains("showing"))
-    e.classList.remove("showing");
-  else
-    e.classList.add("showing");
-} */
-// const classNameZero = () => {
-//   if (balance !== 0) {
-//     className = "balance"
-//   } else { className = "zero" }
-// }
-// <div className={`balance ${balance === 0 ? 'zero' : ''}`}>${balance}</div>

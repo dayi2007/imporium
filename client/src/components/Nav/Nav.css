@@ -11,13 +11,7 @@
   z-index: 20;
   top:0;
 }
-.burger-button {
-  background-color: white;
-  display: none;
-}
-/* .burger-button li {
 
-} */
 .link {
   font-family: 'Orbitron', sans-serif;
   font-size: 14px;
