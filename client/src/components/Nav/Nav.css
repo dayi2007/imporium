@@ -47,7 +47,7 @@
 .links {
   flex-wrap: nowrap;
   position: absolute;
-  padding-left: 50vw;
+  padding-left: 20vw;
   max-height: 60px;
   flex-shrink: 1;
 }
@@ -57,18 +57,28 @@
 
 @media only screen and (max-width: 1290px) {
 .links {
+  padding-left: 20vw
+  }
+}
+@media only screen and (max-width: 1300px) {
+.links {
   padding-left: 10vw
   }
 }
+@media only screen and (max-width: 1036px) {
+.links {
+  padding-left: 5vw
+  }
+}
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 860px) {
   .links {
     display: none;
   }
   .burger-button {
     display: flex;
     flex-direction: column;
-    padding-left: 1vw;
+    padding-left: 0.5vw;
   }
 
   .burger-wrapper{
@@ -89,6 +99,6 @@
     margin-left: 0vw;
     padding-right: 1vw;
     position: absolute;
-    left: 17vw;
+    left: 12.5vw;
   }
 }
