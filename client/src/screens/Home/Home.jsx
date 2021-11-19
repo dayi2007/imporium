@@ -35,13 +35,8 @@ const Home = (props) => {
         "https://lh3.googleusercontent.com/iTU0udQtxQ5k_s1zTy4CoIlFPWy0SKiu3Z9CJhoxbiluYPq7Mh_Kjxa7Q-0YY6cwiJ4YpJVCU0VHBSG37BvkDDQ28HYRXHcN0t4tdQ=w600"]
     
 return (
-<<<<<<< HEAD
-    <div>
-        <Layout user={props.user}>
-=======
     <div className="home-div">
         <Layout >
->>>>>>> d42ad065cfe1f4d597f0678c5ba7ccbe071e0e4e
         <div className="newhome">
             <div className='home'>
                 <Carousel />
@@ -57,8 +52,6 @@ return (
             </div>
         </Layout>
     </div>
-
-
 
 )
 }
