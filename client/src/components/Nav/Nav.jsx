@@ -1,8 +1,12 @@
 import "./Nav.css";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useState } from 'react';
 import logo from "./logo-smaller.png";
-import Burger from '../../components/Burger/Burger.jsx';
+import { MdClose } from "react-icons/md"
+import { FiMenu } from "react-icons/fi"
+import BurgerMenu from '../../components/BurgerMenu/BurgerMenu.jsx';
+
 
 const authenticatedOptions = (
   <>
@@ -34,15 +38,29 @@ const alwaysOptions = (
     </NavLink>
   </>
 );
-const Nav = ({ user }) => {
-  //   const [navbarOpen, setNavbarOpen] = useState(false);
 
-  // //   const handleToggle = () => {
-  // //     setNavbarOpen(!navbarOpen);
-  // };
+
+
+const Nav = ({ user }) => {
+  const [flip, isFlipped] = useState(false);
+
+  const toggleBurger = () => {
+    isFlipped(!flip);
+  }
+
   return (
     <nav>
+
       <div className="nav">
+        <div className="burger-wrapper">
+          <button className="burger-button" onClick={toggleBurger}>
+          {flip ? (
+              <MdClose style={{ color: "#fff", width: "40px", height: "40px" }}
+              />) :
+              (<FiMenu style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />)}
+            {flip ? <BurgerMenu user={user}/> : null}
+          </button>
+      </div>
         <NavLink className="logo" to="/">
           {/* <ul></ul> */}
           <img src={logo} alt="logo" className="logo" />
