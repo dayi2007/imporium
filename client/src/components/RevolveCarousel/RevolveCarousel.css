@@ -92,6 +92,10 @@
 }
 @media only screen and (max-width: 680px) {
     .revolving-carousels {
-        margin-top: 600px;
+        margin-top: 150px;
     }
+    .scope-container {
+        height: 80vh;
+    }
+
 }

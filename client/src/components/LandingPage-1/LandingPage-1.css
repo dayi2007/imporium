@@ -21,7 +21,7 @@
     margin-right: 20px;
 }
 .landing-page-2 {
-    height: 500px;
+    height: fit-content;
     color: white;
     font-family: 'Orbitron', sans-serif;
     display: flex;
@@ -133,6 +133,12 @@
 }
 
 @media only screen and (max-width: 680px) {
+    .landing-page-title-1 {
+        font-size: 2rem;
+        white-space: wrap;
+    }
+
+    
     .landing-page-2 {
         display:block;
     }
