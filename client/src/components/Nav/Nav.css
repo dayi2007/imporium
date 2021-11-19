@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Orbitron:wght@400;500&display=swap');
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -25,9 +24,7 @@
   -webkit-text-fill-color: transparent;
     background-image: linear-gradient(0deg,rgb(161, 56, 139), rgb(93, 21, 172));
     background-clip: text;
-
 }
-
 .logo {
   font-size: 38px;
   margin-left: 3rem;
@@ -52,13 +49,11 @@
 .burger-wrapper {
   display: none;
 }
-
 @media only screen and (max-width: 1290px) {
 .links {
   padding-left: 10vw
   }
 }
-
 @media only screen and (max-width: 680px) {
   .links {
     display: none;
@@ -68,7 +63,6 @@
     flex-direction: column;
     padding-left: 1vw;
   }
-
   .burger-wrapper{
     display: flex;
     align-items: center;
@@ -76,13 +70,11 @@
     flex-direction: column;
     justify-content: center;
   }
-
   .nav {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
   }
-
   .logo {
     margin-left: 0vw;
     padding-right: 1vw;

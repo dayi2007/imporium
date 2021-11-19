@@ -1,6 +1,6 @@
-import './LandingPage-2.css'
+import './RevolveCarousel.css'
 
-const LandingPageTwo = (props) => {
+const RevolveCarousel = (props) => {
 
     return (
         <div className="landing-page-two">
@@ -22,4 +22,4 @@ const LandingPageTwo = (props) => {
     )
 }
 
-export default LandingPageTwo
+export default RevolveCarousel
