@@ -57,6 +57,10 @@ body {
   margin-top: 0.5rem;
   font-size: 0.8;
   padding-bottom: 0.5;
+  
+}
+#username{
+  padding-bottom: 2vh;
 }
 #email, 
 #email::placeholder {
@@ -69,7 +73,9 @@ body {
   font-size: 0.8;
   padding-bottom: 0.5;
 }
-
+#email{
+  padding-bottom: 2vh;
+}
 #password, 
 #password::placeholder {
   width: 100%;
@@ -81,6 +87,9 @@ body {
   font-size: 0.8;
   padding-bottom: 0.5;
 }
+#password{
+  padding-bottom: 2vh;
+}
 #password1, 
 #password1::placeholder {
   width: 100%;
@@ -91,6 +100,10 @@ body {
   margin-top: 0.5rem;
   font-size: 0.8;
   padding-bottom: 0.5;
+}
+#password1{
+  padding-bottom: 5vh;
+
 }
 
 #button {
