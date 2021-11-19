@@ -42,10 +42,12 @@ return (
                 <Carousel />
             </div>
         </div>
-        <LandingPage />
-            <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
-            <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
-            <RevolveCarousel images={mandelbrot} collectionName={"Mandebrot"}/>
+            <LandingPage />
+            <div className="revolving-carousels">
+                <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
+                <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
+                <RevolveCarousel images={mandelbrot} collectionName={"Mandebrot"}/>
+            </div>
         </Layout>
     </div>
 
