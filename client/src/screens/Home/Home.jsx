@@ -37,6 +37,7 @@ const Home = (props) => {
 return (
     <div className="home-div">
         <Layout user={props.user}>
+
         <div className="newhome">
             <div className='home'>
                 <Carousel />
@@ -52,8 +53,6 @@ return (
             </div>
         </Layout>
     </div>
-
-
 
 )
 }
