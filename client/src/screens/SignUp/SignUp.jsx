@@ -64,7 +64,7 @@ const SignUp = (props) => {
     <div className='form-container'>
       <h3>Sign Up</h3>
       <form onSubmit={onSignUp}>
-        <label>Username</label>
+        {/* <label>Username</label> */}
         <input
           id="username"
           required
@@ -74,7 +74,7 @@ const SignUp = (props) => {
           placeholder='Enter username'
           onChange={handleChange}
         />
-        <label>Email address</label>
+        {/* <label>Email address</label> */}
         <input
           id="email"
           required
@@ -84,7 +84,7 @@ const SignUp = (props) => {
           placeholder='Enter email'
           onChange={handleChange}
         />
-        <label>Password</label>
+        {/* <label>Password</label> */}
         <input
           id="password"
           required
@@ -94,7 +94,7 @@ const SignUp = (props) => {
           placeholder='Password'
           onChange={handleChange}
         />
-        <label>Password Confirmation</label>
+        {/* <label>Password Confirmation</label> */}
         <input
           id="password1"
           required

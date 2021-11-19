@@ -103,3 +103,11 @@ body {
   cursor: pointer;
   transition: 0.3 ease-in-out;
 }
+.lable-sign-in {
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  font-size: large;
+  text-align: center;
+  margin-bottom: 5rem;
+
+}
