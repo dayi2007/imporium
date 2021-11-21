@@ -10,7 +10,7 @@
 }
 
 .cardbox {
-  /* background-image: linear-gradient(#B760E0, #60E084);*/
+  background-image: linear-gradient(#B760E0, #60E084);
   width: 75vh;
   height: 75vh;
   /* position: relative; */
