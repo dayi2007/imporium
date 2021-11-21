@@ -10,7 +10,7 @@ body {
 }
 
 .form-container {
-  /* background-image: linear-gradient(#B760E0, #60E084); */
+  background-image: linear-gradient(#B760E0, #60E084);
   width: 400px;
   height: 600px;
   position: absolute;

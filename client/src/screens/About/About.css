@@ -1,41 +1,37 @@
-
-.main{
-  font-family: 'Orbitron', sans-serif;
-  margin-top: 15vh;
-  /* background: red; */
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 7vh;
+* {
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.devs{
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 6vh;
+}
 .cardbox {
-  /* background-image: linear-gradient(#B760E0, #60E084);*/
+  background-image: linear-gradient(#B760E0, #60E084);
   width: 75vh;
   height: 75vh;
-  /* position: relative; */
+  position: absolute;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -45%);
   border-radius: 16px;
   padding: 10px;
-  /* box-shadow: 2px 2px 8px red; */
   display: grid;
   row-gap: 10px;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: 100%;
-  align-content: space-evenly;
   backdrop-filter: blur(5px);
   background-color: rgba(255,255,255,.1);
 }
 
 .dev {
-  /* display: grid; */
   background-color: white;
   opacity: 0.5;
   border: 5px black;
   border-radius: 10px;
-  /* justify-content: right; */
   align-content: center;
   padding-top: 4vh;
   padding-left: 1.5vh;
@@ -43,12 +39,10 @@
 }
 
 .dev:hover {
-  /* display: grid; */
   background-color: white;
   opacity: 1;
   border: 5px black;
   border-radius: 10px;
-  /* justify-content: right; */
   align-content: center;
   transition: 0.2s ease-in-out;
   transform: scale(1.05);
@@ -64,30 +58,7 @@
 .dev-name{
   float: left;
 }
-.cardbox1 {
-  /* backdrop-filter: blur(5px); */
-  backdrop-filter: blur(5px);
-  background-color: rgba(255,255,255,.1);
-  border-radius: 16px;
-  padding: 10px;
-  width: 50vh;
-  text-align: center;
-}
-.developers {
-  border: 5px black;
-  border-radius: 10px;
-  align-content: center;
-  padding-top: 4vh;
-  padding-left: 1.5vh;
-  color: white;
-  letter-spacing: 0.4vw;
-}
-.about-devs{
-  font-family: 'Orbitron', sans-serif;
-  padding: 15px;
-  color: white;
-  font-weight: 500;
-}
+
 @media only screen and (max-width: 680px) {
 
   .cardbox { 
@@ -97,20 +68,11 @@
     flex-direction: column;
     height: auto;
   }
-  .cardbox1 { 
-    margin-top: 4vh;  
-    width: 79vw;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .developers {
-    padding-top: 1vh;
-    padding-left: 1vh;
-    font-size: 60%;
-  }
-  .about-devs{
-    font-size: 100%;
+  .devs{
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 6vh;
   }
   .img-about { 
     margin-right: 0.8vh;
@@ -126,10 +88,5 @@
   .dev-name{
     font-size: 1.5vh;
     padding: 1.5vh;
-  }
-  .main{
-    flex-direction: column;
-    margin-top: 10vh;
-    margin-bottom: 18vh;
   }
 }

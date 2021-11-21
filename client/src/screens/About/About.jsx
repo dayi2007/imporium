@@ -6,13 +6,7 @@ import Layout from '../../components/Layout/Layout';
 const About = (props) => {
   return (
   <Layout user={props.user}>
-    <div className="main">
-      <div className="cardbox1">
-        <div className="developers">
-          <h1>Meet the Devs</h1>
-          <p className="about-devs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non efficitur justo, at hendrerit orci. Phasellus semper metus urna, at fringilla mauris faucibus ultricies. Sed ac augue sed enim pellentesque tincidunt. Mauris aliquam tortor odio, et viverra est lacinia non. Suspendisse sodales nulla dictum laoreet consequat.</p>
-        </div>
-      </div>
+      <h1 className="devs">Meet the Devs</h1>
       <div className="cardbox">
         <div className="dev" id="dev1">
           <h1 className="dev-name">Joseph Somuah</h1>
@@ -50,8 +44,6 @@ const About = (props) => {
           </div>
         </div>
       </div>
-    {/* </main> */}
-    </div>
   </Layout>
   )
 }
