@@ -38,13 +38,23 @@ return (
     <div className="home-div">
         <Layout user={props.user}>
 
-        <div className="newhome">
-            <div className='home'>
+        <div className="main-carousel">
                 <Carousel />
-            </div>
         </div>
             <div>
             <LandingPage />
+            </div>
+
+            <div className="feature-title">
+                <h1 className="featured-artists">Featured Artists</h1>
+            </div>
+            <div className="revolving-carousels">
+                <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
+                <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
+                <RevolveCarousel images={mandelbrot} collectionName={"Mandelbrot"}/>
+            </div>
+            <div className="feature-title">
+                <h1 className="featured-categories">Featured Categories</h1>
             </div>
             <div className="revolving-carousels">
                 <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
