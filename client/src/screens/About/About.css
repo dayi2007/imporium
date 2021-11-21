@@ -74,8 +74,6 @@
   text-align: center;
 }
 .developers {
-  /* background-color: white; */
-  /* opacity: 0.5; */
   border: 5px black;
   border-radius: 10px;
   align-content: center;
@@ -92,11 +90,46 @@
 }
 @media only screen and (max-width: 680px) {
 
-  .cardbox {   
-    width: 45vh;
-    height: 55vh;
+  .cardbox { 
+    margin-top: 4vh;  
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .cardbox1 { 
+    margin-top: 4vh;  
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .developers {
+    padding-top: 1vh;
+    padding-left: 1vh;
+    font-size: 60%;
+  }
+  .about-devs{
+    font-size: 100%;
+  }
+  .img-about { 
+    margin-right: 0.8vh;
+    width: 8vw;
+    height: 4vh;
+    float: right;
+    padding-top: 0.5vh;
+  }
+  .dev{
+    height: 5vh;
+    padding-top: 0;
   }
   .dev-name{
-    font-size: 3vh;
+    font-size: 1.5vh;
+    padding: 1.5vh;
+  }
+  .main{
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 18vh;
   }
 }
