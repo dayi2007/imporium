@@ -3,7 +3,7 @@ import './Home.css'
 import Layout from '../../components/Layout/Layout'
 import Carousel from '../../components/Carousel/Carousel'
 import LandingPage from '../../components/LandingPage-1/LandingPage-1'
-import LandingPageTwo from '../../components/LandingPage-2/LandingPage-2'
+import RevolveCarousel from '../../components/RevolveCarousel/RevolveCarousel'
 const Home = (props) => {
 
     const bossbeauties = [
@@ -35,22 +35,24 @@ const Home = (props) => {
         "https://lh3.googleusercontent.com/iTU0udQtxQ5k_s1zTy4CoIlFPWy0SKiu3Z9CJhoxbiluYPq7Mh_Kjxa7Q-0YY6cwiJ4YpJVCU0VHBSG37BvkDDQ28HYRXHcN0t4tdQ=w600"]
     
 return (
-    <div>
-        <Layout >
+    <div className="home-div">
+        <Layout user={props.user}>
+
         <div className="newhome">
             <div className='home'>
                 <Carousel />
             </div>
         </div>
-
-        <LandingPage />
-            <LandingPageTwo images={bossbeauties} collectionName={"Boss Beauties"}/>
-            <LandingPageTwo images={coolcats} collectionName={"Cool Cats"}/>
-            <LandingPageTwo images={mandelbrot} collectionName={"Mandebrot"}/>
+            <div>
+            <LandingPage />
+            </div>
+            <div className="revolving-carousels">
+                <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
+                <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
+                <RevolveCarousel images={mandelbrot} collectionName={"Mandebrot"}/>
+            </div>
         </Layout>
     </div>
-
-
 
 )
 }
