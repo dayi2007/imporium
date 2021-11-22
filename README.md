@@ -85,4 +85,9 @@ https://github.com/dayi2007/imporium/projects/1?add_cards_query=is%3Aopen
 
 ![Screen Shot 2021-11-12 at 5 06 32 PM](https://user-images.githubusercontent.com/91752553/141540647-d8a7ba3a-7975-4900-9fdb-9eaec852f75b.png)
 
+##Credits 
+
+- Opening Carousel by: DevLoop01 -- Reference: https://codepen.io/dev_loop/pen/MWKbJmO
+- Particles by: Vincent Garreau -- Reference: https://codepen.io/akey96/pen/oNgeQYX
+- Revolving Carousel's by Bilal Rizwaan -- Reference: https://codepen.io/Bilal1909/pen/KKVRbeQ?editors=1100
 
