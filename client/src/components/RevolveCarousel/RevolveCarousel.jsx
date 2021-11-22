@@ -8,7 +8,7 @@ const RevolveCarousel = (props) => {
             <div className="scope-container">
 
                 <div className="scope">
-                    <span id="style1" styles={"--i:1;"}><img id="img-rotate" src={props.images[0]} alt="not found"/></span>
+                    <span id="style1" styles={"--i:1;"}><a href="https://cryptomaniaks.com/cryptocurrency-glossary/l/liquidity-swap"><img id="img-rotate" src={props.images[0]} alt="not found"/></a></span>
                     <span id="style2" styles={"--i:2;"}><img id="img-rotate" src={props.images[1]} alt="not found"/></span>
                     <span id="style3" styles={"--i:3;"}><img id="img-rotate" src={props.images[2]} alt="not found"/></span>
                     <span id="style4" styles={"--i:4;"}><img id="img-rotate" src={props.images[3]} alt="not found"/></span>
