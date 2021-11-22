@@ -9,17 +9,17 @@ body {
 }
 
 .form-container {
-  /* background-image:
+  background-image:
    linear-gradient( #b760e04b, 
   #AE6ED7, #AB73D3, #A679CE
   #A181C9, #9B8AC2, #9692BC,
-  #9298B8); */
+  #9298B8);
   width: 400px;
   height: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   transform: translate(-50%, -50%);
   text-align: center;
   border-radius: 16px;

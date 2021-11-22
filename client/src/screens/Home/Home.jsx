@@ -33,21 +33,40 @@ const Home = (props) => {
         "https://lh3.googleusercontent.com/uCoeYMmmi38kndaqXM38aS9vc_GK71l7P6ikV5A_xdnKHiAOMQUDW_K1INGz0Uc6jyTHDPgCbb-GNp76Lg5ZX6jBMAz88ifUnhpb5w=w300", 
         "https://lh3.googleusercontent.com/iTNGnNsfzooD4IgXeMcUpZx7RgvWXl7Q5DpKqxcf0EFtAaQ2FKpss48feJq6hZhK9fWqU3AEsei9G2CTM5psJcKBKRx9HDTh1fqt=w300",
         "https://lh3.googleusercontent.com/iTU0udQtxQ5k_s1zTy4CoIlFPWy0SKiu3Z9CJhoxbiluYPq7Mh_Kjxa7Q-0YY6cwiJ4YpJVCU0VHBSG37BvkDDQ28HYRXHcN0t4tdQ=w600"]
+    const featured = ["https://lh3.googleusercontent.com/PZIlUphZOgmjDUHuXGQwnKBI0qswbFDB2Qtu6fiaZ_RA7Zy1wLtklyLFC9th3N-Ia9VbfWtycnp-MJ1a1lBH_420nm1b4N-DjrN__Q=w600",
+        "https://lh3.googleusercontent.com/RDfZH1Vk-Sg_MLAHUDNKmOO7Ndq-cut9YN8RzYTz0WUXgUBg-1T8xrjminF2uKXpYvPZhHhGhElXpxRdVV5dtCbKRdYqd2RMVn-D=w600",
+        "https://lh3.googleusercontent.com/O_Hsp-3kvKlDZOtPdWo5Qh6jxCSg9iMORjniQW9XUUaNOsblvzuQVFeBXMWFj2kGvwQnQOoXu83aCHMaqJVE437FS3QhOaJYef8xxQ=s992",
+        "https://lh3.googleusercontent.com/FHzsbM-Bg1Fkzs7W5TdovhEzq-y3S5eE5lREjhGZqa6Lu7j3qBZk6xWTXIOYyXSj8PeBRkRmFnXwJMwAvU7t-X0224BLP8cU1UuM7C4=s992",
+        "https://lh3.googleusercontent.com/vkJVHkQSDFu5-DdIqlzRBfVLfx84WKg5Y1Jx_kNoqHuYWYv3LJ9RZRRe56Oh3PQPBdkcenN1J-lVYySyqgrA6Y8bdcKbbHBoJ_OWiD0=w600",
+        "https://lh3.googleusercontent.com/fOHAJuQk5iMyUEzWtdX-CS2dYeZRSfUP1v2B321J4RWRuOfZ9wIm416xMPEsiI0z3o07Kwckekh1IkJaiT0O-wkAOCOsjYdGL7dVwg=w600",
+        "https://lh3.googleusercontent.com/W9Fba2FmdNnsCBTR5xC_cVg_lMX3bVEdw-9dnK3Gd9vA6QHBKdSKzHdaf4levHhNkuz_On-Pd4vrd5BYgvxCGUnO_x9hZuO50kOJYg=w600",
+        "https://lh3.googleusercontent.com/mV5sntSbh9y--NZI-mOEF-6DmPyCXhISukJ8HsG44SRRqtx4rzk2x7H0xEXEekK2mbl1dJ90hl267TFeWIbVJAmlEO58UCC4kn4G=w600"
+        ]
     
 return (
     <div className="home-div">
         <Layout user={props.user}>
 
-        <div className="newhome">
-            <div className='home'>
+        <div className="main-carousel">
                 <Carousel />
-            </div>
         </div>
             <div>
             <LandingPage />
             </div>
+
+            <div className="feature-title">
+                <h1 className="featured-artists">Featured Artists</h1>
+            </div>
             <div className="revolving-carousels">
                 <RevolveCarousel images={bossbeauties} collectionName={"Boss Beauties"}/>
+                <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
+                <RevolveCarousel images={mandelbrot} collectionName={"Mandelbrot"}/>
+            </div>
+            <div className="feature-title">
+                <h1 className="featured-categories">Featured Categories</h1>
+            </div>
+            <div className="revolving-carousels">
+                <RevolveCarousel images={featured} collectionName={"Featured"}/>
                 <RevolveCarousel images={coolcats} collectionName={"Cool Cats"}/>
                 <RevolveCarousel images={mandelbrot} collectionName={"Mandebrot"}/>
             </div>
