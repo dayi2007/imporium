@@ -33,13 +33,14 @@ Easy to use online market place for NFT's of the etherium network. Also a platfo
   },
   { timestamps: true }
 ```
-![Screen Shot 2021-11-12 at 4 44 10 PM](https://user-images.githubusercontent.com/29825714/141538301-bd8da908-bcad-4459-af2e-ad44126f3fd7.png)
+![screen_shot_2021-11-21_at_5 03 44_pm](https://user-images.githubusercontent.com/9592819/142796462-e6a6836f-71a4-4106-a74f-aec5d55fe735.png)
 
-![Screen Shot 2021-11-12 at 4 44 27 PM](https://user-images.githubusercontent.com/29825714/141538327-063a0bbf-778a-4064-a6b2-1a663a4ecf5a.png)
+![screen_shot_2021-11-21_at_5 03 30_pm](https://user-images.githubusercontent.com/9592819/142796464-0edd0d34-2d25-4cfb-84e5-b3ef40454bb7.png)
 
 Wireframe UI: https://www.figma.com/file/4zEaux79Sbybg8qrPBSdMx/Imporium?node-id=0%3A1
 
-![image](https://user-images.githubusercontent.com/29825714/141541212-d19b112d-2d0a-48aa-9853-718110f616b1.png)
+![screen_shot_2021-11-21_at_4 46 18_pm](https://user-images.githubusercontent.com/9592819/142796346-299c4d72-20c6-4204-88eb-88ba88d251e9.png)
+
 
 Component Structure: https://whimsical.com/imporium-RGpNBgc58uN9dbCwspKTjC
 ## MVP:
