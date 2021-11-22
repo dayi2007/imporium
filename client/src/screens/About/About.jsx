@@ -9,8 +9,8 @@ const About = (props) => {
     <div className="main">
       <div className="cardbox1">
         <div className="developers">
-          <h1>Meet the Devs</h1>
-          <p className="about-devs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non efficitur justo, at hendrerit orci. Phasellus semper metus urna, at fringilla mauris faucibus ultricies. Sed ac augue sed enim pellentesque tincidunt. Mauris aliquam tortor odio, et viverra est lacinia non. Suspendisse sodales nulla dictum laoreet consequat.</p>
+          <h1>The future holds...</h1>
+          <p className="about-devs">A lot of potential to bring this project to the next level. With a shared enthusiasm and passion for cryptocurrencies - alongside a deeply rooted obsession with the future advancements of society - our team wishes to build this site up to a fully functioning marketplace. This includes a user profile to track desired items to be purchased, display a user's personal collection of NFT's, and give users the ability to interact amongst each other. Beyond these features, with the anticipation of Web3.0, our vision is to see Imporium not only on a screen, but a virtual space to meet and interact with our users.</p>
         </div>
       </div>
       <div className="cardbox">
