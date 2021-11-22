@@ -12,7 +12,6 @@ import SignOut from "./screens/SignOut/SignOut";
 import SignUp from "./screens/SignUp/SignUp";
 import { verifyUser } from "./services/users";
 import './'
-import Layout from "./components/Layout/Layout"
 const App = () => {
   const [user, setUser] = useState(null);
 
