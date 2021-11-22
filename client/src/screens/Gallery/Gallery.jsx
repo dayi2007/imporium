@@ -21,6 +21,7 @@ const Gallery = (props) =>{
             const allCards = await getProducts()
             setCards(allCards)
             setSearchResult(allCards)
+            console.log(allCards)
         }
         fetchCards()
     }, [])
